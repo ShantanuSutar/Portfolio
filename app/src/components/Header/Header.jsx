@@ -1,29 +1,41 @@
 const Header = () => {
   return (
-    <header className=" border border-red-500 p-3">
-      <nav className=" flex justify-between items-center">
-        <a href="">Shantanu</a>
+    <header className=" text-lg font-medium p-3 shadow-md">
+      <nav className=" flex justify-between items-center sticky">
+        <a href="" className=" text-2xl">
+          Shantanu
+        </a>
         <div className="nav-menu">
           <ul className=" flex gap-8">
             <li>
-              <a href="" className="">
+              <a href="" className=" hover:border-b-2 border-black">
                 Home
               </a>
             </li>
             <li>
-              <a href="">About</a>
+              <a href="" className=" hover:border-b-2 border-black">
+                About
+              </a>
             </li>
             <li>
-              <a href="">Skills</a>
+              <a href="" className=" hover:border-b-2 border-black">
+                Skills
+              </a>
             </li>
             <li>
-              <a href="">Services</a>
+              <a href="" className=" hover:border-b-2 border-black">
+                Services
+              </a>
             </li>
             <li>
-              <a href="">Portfolio</a>
+              <a href="" className=" hover:border-b-2 border-black">
+                Portfolio
+              </a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="" className=" hover:border-b-2 border-black">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
