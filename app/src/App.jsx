@@ -1,7 +1,9 @@
+import Header from "./components/Header";
+
 function App() {
   return (
-    <div className=" h-screen text-3xl flex items-center justify-center body-font font-poppins">
-      <h1 className="">Shantanu</h1>
+    <div className=" container h-screen max-w-[80%] mx-auto">
+      <Header />
     </div>
   );
 }
