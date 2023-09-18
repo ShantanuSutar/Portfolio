@@ -1,11 +1,10 @@
-import { BsArrowDown } from "react-icons/bs";
 const ScrollDown = () => {
   return (
     <div className=" ml-[12rem] flex items-center my-auto gap-5">
       <span className="scroll-btn flex flex-col text-xl font-medium">
         <a
-          href=""
-          className=" hover:translate-y-[-2px] transition-all ease-in-out duration-75"
+          href="#about"
+          className=" hover:translate-y-[-5px] transition-all ease-in duration-75"
         >
           <span className="mouse">
             <span></span>

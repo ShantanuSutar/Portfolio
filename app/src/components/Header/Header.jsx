@@ -1,19 +1,20 @@
 const Header = () => {
   return (
-    <header className=" text-lg font-medium p-3 shadow-md">
-      <nav className=" flex justify-between items-center sticky">
+    <header className=" max-w-[80%] text-lg font-medium p-3 fixed  w-full z-10 opacity-100 bg-white">
+      {/* // <header className=" text-lg font-medium p-3 shadow-md"> */}
+      <nav className=" flex justify-between items-center">
         <a href="" className=" text-2xl">
           Shantanu
         </a>
         <div className="nav-menu">
           <ul className=" flex gap-8">
             <li>
-              <a href="" className=" hover:border-b-2 border-black">
+              <a href="#home" className=" hover:border-b-2 border-black">
                 Home
               </a>
             </li>
             <li>
-              <a href="" className=" hover:border-b-2 border-black">
+              <a href="#about" className=" hover:border-b-2 border-black">
                 About
               </a>
             </li>

@@ -22,11 +22,7 @@ const Info = () => {
         </a>
       </div>
       <div className=" mr-8">
-        <img
-          src="https://avatars.githubusercontent.com/u/92261216?v=4"
-          alt=""
-          className="home-img"
-        />
+        <img src="../src/assets/FormalPhoto.jpg" alt="" className="home-img" />
       </div>
     </section>
   );

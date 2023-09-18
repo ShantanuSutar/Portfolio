@@ -4,8 +4,8 @@ import Socials from "./Socials";
 
 const Home = () => {
   return (
-    <section className=" h-[90%] flex items-center">
-      <div>
+    <section className="h-[100%] flex items-center" id="home">
+      <div className=" mt-20">
         <div className=" flex gap-40 mb-16">
           <Socials />
           <div>
