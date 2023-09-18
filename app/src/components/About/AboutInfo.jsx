@@ -5,7 +5,7 @@ import { BsFillJournalBookmarkFill } from "react-icons/bs";
 const AboutInfo = () => {
   return (
     <div className=" flex justify-around text-center">
-      <div className=" flex flex-col items-center gap-1">
+      <div className=" flex flex-col items-center gap-1 hover:shadow-2xl">
         <FaLaptopCode className=" text-xl" />
         <h3 className=" font-medium text-lg">Open Source</h3>
         <span className=" text-slate-600 text-sm">Active Contributions</span>

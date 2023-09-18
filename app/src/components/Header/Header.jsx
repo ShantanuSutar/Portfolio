@@ -19,7 +19,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="" className=" hover:border-b-2 border-black">
+              <a href="#skills" className=" hover:border-b-2 border-black">
                 Skills
               </a>
             </li>
