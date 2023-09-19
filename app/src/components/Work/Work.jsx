@@ -121,7 +121,7 @@ const Work = () => {
         {/* -------Previous Project */}
         <div className="grid grid-rows-3 items-center gap-4 max-w-[220px] min-h-[16rem] shadow-xl py-4 px-6">
           <SiAntdesign className=" text-2xl" />
-          <h3 className=" text-xl font-medium">previous project </h3>
+          <h3 className=" text-xl font-medium">Previous Project</h3>
           <span
             className=" flex items-center gap-2 text-sm text-slate-500 hover:underline cursor-pointer"
             onClick={(e) => handleView(e)}
@@ -140,7 +140,7 @@ const Work = () => {
                 className=" absolute top-6 right-6 text-2xl cursor-pointer  hover:rotate-90 transition-all ease-linear text-slate-500  duration-200"
                 onClick={handleClose}
               />
-              <h3 className=" text-2xl font-semibold">previous project</h3>
+              <h3 className=" text-2xl font-semibold">Portfolio</h3>
               <p
                 className=" px-6 text-slate-500 text-sm
                "
@@ -187,7 +187,7 @@ const Work = () => {
         {/* -------- Current Project*/}
         <div className="grid grid-rows-3 items-center gap-4 max-w-[220px] min-h-[16rem] shadow-xl py-4 px-6">
           <BsPencilSquare className=" text-2xl" />
-          <h3 className=" text-xl font-medium">current project</h3>
+          <h3 className=" text-xl font-medium">Current Project</h3>
           <span
             className=" flex items-center gap-2 text-sm text-slate-500 hover:underline cursor-pointer"
             onClick={(e) => handleView(e)}
@@ -206,7 +206,7 @@ const Work = () => {
                 className=" absolute top-6 right-6 text-2xl cursor-pointer  hover:rotate-90 transition-all ease-linear text-slate-500  duration-200"
                 onClick={handleClose}
               />
-              <h3 className=" text-2xl font-semibold">current project</h3>
+              <h3 className=" text-2xl font-semibold">The Wild Oasis</h3>
               <p
                 className=" px-6 text-slate-500 text-sm
                "
