@@ -3,7 +3,10 @@ import Frontend from "./Frontend";
 
 const Skills = () => {
   return (
-    <div className="w-full h-[90%] mt-20" id="skills">
+    <div
+      className="w-full h-[90%] pt-20   border border-yellow-400"
+      id="skills"
+    >
       <div className=" flex flex-col items-center gap-1">
         <h2 className=" text-4xl font-semibold">Skills</h2>
         <span className=" text-slate-700">Tech Stack</span>

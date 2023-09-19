@@ -150,4 +150,9 @@ html {
   animation: ani-mouse 2.5s linear infinite;
 }
 
-/* ABOUT IMAGE */
+/* HEADER LINKS */
+.active {
+  border-bottom: 2px solid black;
+}
+
+/*  */
