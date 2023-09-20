@@ -1,7 +1,7 @@
 import Socials from "./Socials";
 const Footer = () => {
   const socials = Socials;
-  console.log(socials);
+  //   console.log(socials);
   return (
     <footer className=" w-full min-h-[60%] pt-24 border border-yellow-400 flex flex-col gap-10 text-center">
       <div className=" flex flex-col items-center gap-4">

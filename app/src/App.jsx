@@ -12,18 +12,18 @@ import Work from "./components/Work/Work";
 
 function App() {
   return (
-    <div className=" container h-screen max-w-[80%] mx-auto">
-      <Header />
-      <Home />
+    <div className=" container mx-auto h-screen sm:max-w-[80%]">
+      {/* <Header />
+      <Home /> */}
       <About />
-      <Skills />
+      {/* <Skills />
       <Work />
       <Qualification />
       <Projects />
       <Testimonials />
       <Contact />
       <Footer />
-      <Scrollup />
+      <Scrollup /> */}
     </div>
   );
 }

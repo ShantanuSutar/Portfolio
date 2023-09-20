@@ -41,6 +41,8 @@ const Header = () => {
     setActive(temp);
     // console.log(temp);
   };
+
+  const [toggle, setToggle] = useState(true);
   return (
     <header className=" max-w-[80%] text-lg font-medium p-3 fixed  w-full z-50 opacity-100 bg-white">
       {/* // <header className=" text-lg font-medium p-3 shadow-md"> */}
