@@ -170,3 +170,31 @@ html {
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
 }
+
+/* Background Change */
+/* 
+body {
+  animation: changeBG 40s linear infinite;
+  animation-direction: alternate;
+} */
+
+/* @keyframes changeBG {
+  0% {
+    background-color: rgb(255, 242, 101);
+  }
+  20% {
+    background-color: rgb(255, 216, 169);
+  }
+  40% {
+    background-color: rgb(185, 254, 81);
+  }
+  60% {
+    background-color: rgb(255, 170, 222);
+  }
+  80% {
+    background-color: rgb(152, 255, 221);
+  }
+  100% {
+    background-color: rgb(255, 145, 106);
+  }
+} */

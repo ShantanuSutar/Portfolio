@@ -19,7 +19,7 @@ const Header = () => {
       state: false,
     },
     {
-      name: "portfolio",
+      name: "projects",
       state: false,
     },
     {
@@ -39,6 +39,7 @@ const Header = () => {
       }
     });
     setActive(temp);
+    // console.log(temp);
   };
   return (
     <header className=" max-w-[80%] text-lg font-medium p-3 fixed  w-full z-10 opacity-100 bg-white">
@@ -99,20 +100,24 @@ const Header = () => {
             </li>
             <li>
               <a
-                href=""
+                href="#projects"
+                onClick={(e) => handleClick(e)}
                 className={`${
-                  active.portfolio ? "active" : "hover:border-b-2 border-black"
+                  active[4].state ? "active" : "hover:border-b-2 border-black"
                 }`}
+                data-name="projects"
               >
-                Portfolio
+                Projects
               </a>
             </li>
             <li>
               <a
-                href=""
+                href="#contact"
+                onClick={(e) => handleClick(e)}
                 className={`${
-                  active.contact ? "active" : "hover:border-b-2 border-black"
+                  active[5].state ? "active" : "hover:border-b-2 border-black"
                 }`}
+                data-name="contact"
               >
                 Contact
               </a>
