@@ -6,14 +6,16 @@ const Work = () => {
 
   return (
     <section
-      className="h-[90%] w-full border border-yellow-400 pt-20"
+      className="min-h-[90%] w-full border border-yellow-400 pb-10 pt-20"
       id="work"
     >
       <div className=" flex flex-col items-center gap-1">
-        <h2 className=" text-4xl font-semibold">Work</h2>
-        <span className=" text-slate-700">My recent work</span>
+        <h2 className=" text-3xl font-semibold md:text-4xl">Work</h2>
+        <span className=" text-sm text-slate-700 lg:text-base">
+          My recent work
+        </span>
       </div>
-      <div className=" flex h-[70%] w-full items-center justify-evenly">
+      <div className=" flex h-[70%] w-full flex-wrap items-center justify-evenly p-8">
         {data.map((item) => {
           return <Card key={item.id} item={item} />;
         })}

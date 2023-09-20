@@ -42,9 +42,12 @@ const Card = ({ item }) => {
     setActive(temp);
   };
   return (
-    <div className="grid min-h-[16rem] max-w-[350px] grid-rows-3 items-center gap-2 px-10 py-4 shadow-xl">
-      <div className=" text-2xl">{icon}</div>
-      <h3 className=" text-xl font-medium">{title}</h3>
+    <div
+      className=" flex min-h-[16rem] w-[300px] flex-col flex-wrap justify-evenly
+      gap-2  px-8 py-8 shadow-xl lg:min-w-[320px] lg:px-10 lg:py-4"
+    >
+      <div className=" text-xl lg:text-2xl">{icon}</div>
+      <h3 className=" text-lg font-medium lg:text-xl">{title}</h3>
       <span
         className=" flex cursor-pointer items-center gap-2 text-sm text-slate-500 hover:underline"
         onClick={(e) => handleView(e)}
