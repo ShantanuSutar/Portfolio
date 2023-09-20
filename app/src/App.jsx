@@ -13,17 +13,17 @@ import Work from "./components/Work/Work";
 function App() {
   return (
     <div className=" container mx-auto h-screen sm:max-w-[80%]">
-      {/* <Header />
-      <Home /> */}
-      <About />
-      {/* <Skills />
-      <Work />
-      <Qualification />
-      <Projects />
-      <Testimonials />
-      <Contact />
-      <Footer />
-      <Scrollup /> */}
+      {/* <Header /> */}
+      {/* <Home /> */}
+      {/* <About /> */}
+      <Skills />
+      {/* <Work /> */}
+      {/* <Qualification /> */}
+      {/* <Projects /> */}
+      {/* <Testimonials /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
+      {/* <Scrollup /> */}
     </div>
   );
 }

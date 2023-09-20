@@ -1,36 +1,36 @@
-import { HiBadgeCheck } from "react-icons/hi";
+import Tech from "./Tech";
 const Frontend = () => {
+  const data = [
+    {
+      id: 1,
+      title: "ui/ux",
+      tech: "react , tailwind, material ui",
+    },
+    {
+      id: 2,
+      title: "State Management",
+      tech: "Redux",
+    },
+    {
+      id: 3,
+      title: "APIs",
+      tech: "React Query",
+    },
+  ];
+
   return (
     <div
-      className=" py-8 px-16 flex flex-col items-center justify-center text-center
-     gap-10 shadow-lg hover:shadow-2xl transition-all ease-linear"
+      className=" flex flex-col items-center justify-center gap-10 px-16 py-8
+     text-left shadow-lg transition-all ease-linear hover:shadow-2xl"
     >
-      <h3 className=" text-3xl font-semibold  text-black">FrontEnd</h3>
-      <div>
-        <div className=" flex flex-col gap-7">
-          <div className=" flex items-center justify-center gap-2">
-            <HiBadgeCheck />
-            <div className=" w-full flex items-center gap-x-8 justify-between">
-              <h3 className=" text-xl text-slate-800">UI/UX</h3>
-              <span className=" text-slate-600">
-                React, Tailwind, Material UI
-              </span>
-            </div>
-          </div>
-          <div className=" flex items-center justify-center gap-2">
-            <HiBadgeCheck />
-            <div className=" w-full flex items-center gap-x-8 justify-between">
-              <h3 className=" text-xl text-slate-800">State Management</h3>
-              <span className=" text-slate-600">Redux</span>
-            </div>
-          </div>
-          <div className=" flex items-center justify-center gap-2">
-            <HiBadgeCheck />
-            <div className=" w-full flex items-center gap-x-8 justify-between">
-              <h3 className=" text-xl text-slate-800">APIs</h3>
-              <span className=" text-slate-600">React Query</span>
-            </div>
-          </div>
+      <h3 className=" text-xl font-semibold text-black  lg:text-3xl">
+        FrontEnd
+      </h3>
+      <div className="">
+        <div className=" flex flex-col items-start gap-7">
+          {data.map((item) => {
+            return <Tech key={item.id} title={item.title} tech={item.tech} />;
+          })}
         </div>
       </div>
     </div>
