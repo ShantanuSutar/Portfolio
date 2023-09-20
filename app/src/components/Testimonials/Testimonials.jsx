@@ -48,7 +48,10 @@ const Testimonials = () => {
     setCurrentIndex(slideIndex);
   };
   return (
-    <section className=" w-full min-h-[90%] pt-20 border border-yellow-400 flex flex-col gap-16 text-center">
+    <section
+      className=" w-full min-h-[90%] pt-20 border border-yellow-400 flex flex-col gap-16 text-center"
+      id="testimonials"
+    >
       <div className=" flex flex-col items-center gap-1">
         <h2 className=" text-4xl font-semibold">Testimonials</h2>
         <span className=" text-slate-500">People about my work</span>

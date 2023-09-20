@@ -42,7 +42,7 @@ const Header = () => {
     // console.log(temp);
   };
   return (
-    <header className=" max-w-[80%] text-lg font-medium p-3 fixed  w-full z-10 opacity-100 bg-white">
+    <header className=" max-w-[80%] text-lg font-medium p-3 fixed  w-full z-50 opacity-100 bg-white">
       {/* // <header className=" text-lg font-medium p-3 shadow-md"> */}
       <nav className=" flex justify-between items-center">
         <a href="/" className=" text-2xl">

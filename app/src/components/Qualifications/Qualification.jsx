@@ -10,7 +10,7 @@ import { useState } from "react";
 const Qualification = () => {
   const [toggle, setToggle] = useState(true);
   return (
-    <section className=" w-full h-[90%] mt-16 border border-yellow-400 flex flex-col gap-16">
+    <section className=" w-full h-[90%] pt-16 border border-yellow-400 flex flex-col gap-16">
       <div className=" flex flex-col items-center gap-1">
         <h2 className=" text-4xl font-semibold">Qualification</h2>
         <span className=" text-slate-500">My Personal Journey</span>

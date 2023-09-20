@@ -1,5 +1,6 @@
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer.jsx/Footer";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
@@ -20,6 +21,7 @@ function App() {
       <Projects />
       <Testimonials />
       <Contact />
+      <Footer />
     </div>
   );
 }
