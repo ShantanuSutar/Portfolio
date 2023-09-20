@@ -1,3 +1,4 @@
+import { BsFillSendFill } from "react-icons/bs";
 const Info = () => {
   return (
     <section className=" flex items-center gap-5">
@@ -15,10 +16,10 @@ const Info = () => {
           voluptatem
         </p>
         <a
-          href=""
-          className=" px-6 py-4 bg-black text-slate-200 text-md rounded-xl max-w-[10rem] flex items-center justify-center font-medium hover:opacity-90 ease-in-out transition duration-75"
+          href="#contact"
+          className=" px-6 py-4 bg-slate-950 text-slate-200 text-md rounded-xl max-w-[10rem] flex items-center justify-center font-medium hover:opacity-90 ease-in-out transition duration-75 gap-3"
         >
-          Say Hello !
+          Say Hello <BsFillSendFill />
         </a>
       </div>
       <div className=" mr-8">

@@ -33,7 +33,7 @@ const Projects = () => {
       });
       setProjects(newProj);
     }
-    console.log(projects);
+    // console.log(projects);
   }, [filter.name]);
 
   // console.log(projects)
@@ -62,7 +62,7 @@ const Projects = () => {
           );
         })}
       </div>
-      <div className=" flex flex-wrap gap-10 px-4 items-center justify-around shadow-2xl">
+      <div className=" flex flex-wrap gap-10 p-4 items-center justify-around shadow-2xl">
         {projects.map((prj) => {
           return (
             <div key={prj.id} className="text-left shadow-xl p-8">

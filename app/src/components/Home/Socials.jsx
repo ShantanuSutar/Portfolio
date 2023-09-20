@@ -4,7 +4,7 @@ const Socials = () => {
     <div className="flex flex-col my-auto gap-6">
       <a
         href=""
-        className=" hover:translate-y-[-4px] transition-all ease-in-out duration-200"
+        className=" hover:translate-y-[-6px] transition-all ease-in-out duration-200"
       >
         <FaLinkedin className=" text-2xl" />
       </a>

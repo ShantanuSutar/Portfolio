@@ -101,6 +101,8 @@ html {
   }
 }
 
+/* HOME SCROLL BTN */
+
 .scroll-btn > * {
   display: inline-block;
   line-height: 18px;

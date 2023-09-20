@@ -48,7 +48,7 @@ const Testimonials = () => {
     setCurrentIndex(slideIndex);
   };
   return (
-    <section className=" w-full h-[90%] pt-20 border border-yellow-400 flex flex-col gap-16 text-center">
+    <section className=" w-full min-h-[90%] pt-20 border border-yellow-400 flex flex-col gap-16 text-center">
       <div className=" flex flex-col items-center gap-1">
         <h2 className=" text-4xl font-semibold">Testimonials</h2>
         <span className=" text-slate-500">People about my work</span>
@@ -59,7 +59,7 @@ const Testimonials = () => {
             <div className="m-auto py-8 px-24 relative group flex flex-col items-center gap-4 ">
               <div
                 style={{ backgroundImage: `url(${data[currentIndex].img})` }}
-                className="w-[6rem] h-[6rem] rounded-full object-cover bg-center bg-cover duration-500"
+                className="w-[6rem] h-[6rem] rounded-full object-cover bg-center bg-cover duration-700"
               ></div>
               <h3>{data[currentIndex].name}</h3>
               <p className=" mb-10">{data[currentIndex].desc}</p>
