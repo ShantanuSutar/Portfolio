@@ -49,39 +49,43 @@ const Testimonials = () => {
   };
   return (
     <section
-      className=" w-full min-h-[90%] pt-20 border border-yellow-400 flex flex-col gap-16 text-center"
+      className=" flex min-h-[90%] w-full flex-col gap-16 border border-yellow-400 pb-4 pt-20 text-center"
       id="testimonials"
     >
       <div className=" flex flex-col items-center gap-1">
-        <h2 className=" text-4xl font-semibold">Testimonials</h2>
-        <span className=" text-slate-500">People about my work</span>
+        <h2 className=" text-2xl font-semibold sm:text-4xl">Testimonials</h2>
+        <span className=" text-sm text-slate-500 sm:text-base">
+          People about my work
+        </span>
       </div>
-      <div className=" max-w-full bg-gray-200 rounded-2xl mx-36 shadow-2xl">
+      <div className=" mx-4 max-w-full rounded-2xl bg-gray-200 shadow-2xl sm:mx-0 lg:mx-36">
         <div className=" m-auto">
-          <div className="w-full m-auto relative group">
-            <div className="m-auto py-8 px-24 relative group flex flex-col items-center gap-4 ">
+          <div className="group relative m-auto w-full">
+            <div className="group relative m-auto flex flex-col items-center gap-4 py-8 lg:px-24 ">
               <div
                 style={{ backgroundImage: `url(${data[currentIndex].img})` }}
-                className="w-[6rem] h-[6rem] rounded-full object-cover bg-center bg-cover duration-700"
+                className="h-[6rem] w-[6rem] rounded-full bg-cover bg-center object-cover duration-700"
               ></div>
               <h3>{data[currentIndex].name}</h3>
-              <p className=" mb-10">{data[currentIndex].desc}</p>
+              <p className=" mt-6 text-sm sm:mt-4 sm:text-base md:mb-10">
+                {data[currentIndex].desc}
+              </p>
             </div>
             {/* Left Arrow */}
-            <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer hover:text-slate-500">
+            <div className="absolute left-5 top-[45%] hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white hover:text-slate-500 group-hover:block sm:top-[50%]">
               <BsArrowLeft onClick={prevSlide} size={30} />
             </div>
             {/* Right Arrow */}
-            <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer hover:text-slate-500">
+            <div className="absolute right-5 top-[45%] hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white hover:text-slate-500 group-hover:block sm:top-[50%]">
               <BsArrowRight onClick={nextSlide} size={30} />
             </div>
             {/* Dot Slider */}
-            <div className="flex top-4 justify-center">
+            <div className="top-4 flex justify-center">
               {data.map((slide, slideIndex) => (
                 <div
                   key={slideIndex}
                   onClick={() => goToSlide(slideIndex)}
-                  className="text-3xl cursor-pointer"
+                  className="cursor-pointer text-3xl"
                 >
                   <RxDotFilled
                     className={`${
