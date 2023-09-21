@@ -5,8 +5,10 @@ const Skills = () => {
   return (
     <div className="min-h-[80%] w-full py-20" id="skills">
       <div className=" flex flex-col items-center gap-1">
-        <h2 className=" text-4xl font-semibold">Skills</h2>
-        <span className=" text-slate-700">Tech Stack</span>
+        <h2 className=" text-4xl font-semibold text-slate-900 dark:text-white">
+          Skills
+        </h2>
+        <span className=" text-slate-500">My Tech Stack</span>
         <div className=" mx-4 mt-10 flex flex-col gap-5 lg:mx-0 lg:flex-row">
           <Frontend />
           <Backend />
