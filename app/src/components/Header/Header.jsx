@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Small from "./Small";
 import Big from "./Big";
 
@@ -29,6 +29,22 @@ const Header = () => {
       state: false,
     },
   ];
+
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const handleThemeSwitch = () => {
+    console.log(theme);
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   const [active, setActive] = useState(states);
   const handleClick = (e) => {
     const link = e.target.getAttribute("data-name");
@@ -45,10 +61,14 @@ const Header = () => {
   };
 
   return (
-    <header className=" fixed z-40 w-full bg-white p-3 text-lg font-medium opacity-100  shadow-lg md:max-w-[80%]">
+    <header className=" fixed z-40 w-full rounded-md bg-inherit bg-white p-3 text-lg font-medium text-slate-950  opacity-100 shadow-lg dark:bg-slate-900 dark:text-white md:max-w-[80%]">
       {/* // <header className=" text-lg font-medium p-3 shadow-md"> */}
       <Small handleClick={handleClick} active={active} />
-      <Big handleClick={handleClick} active={active} />
+      <Big
+        handleClick={handleClick}
+        active={active}
+        handleThemeSwitch={handleThemeSwitch}
+      />
     </header>
   );
 };

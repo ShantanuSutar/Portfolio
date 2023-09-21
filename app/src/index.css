@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  /* color: white; */
 }
 
 /* HOME IMAGE */
@@ -175,29 +176,29 @@ html {
 }
 
 /* Background Change */
-/* 
-body {
-  animation: changeBG 40s linear infinite;
-  animation-direction: alternate;
-} */
 
-/* @keyframes changeBG {
+/* body {
+  animation: changeBG 30s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changeBG {
   0% {
-    background-color: rgb(255, 242, 101);
+    background-color: rgb(255, 70, 70);
   }
   20% {
-    background-color: rgb(255, 216, 169);
+    background-color: rgb(255, 255, 99);
   }
   40% {
-    background-color: rgb(185, 254, 81);
+    background-color: rgb(93, 254, 90);
   }
   60% {
-    background-color: rgb(255, 170, 222);
+    background-color: rgb(70, 255, 249);
   }
   80% {
-    background-color: rgb(152, 255, 221);
+    background-color: rgb(254, 150, 71);
   }
   100% {
-    background-color: rgb(255, 145, 106);
+    background-color: rgb(188, 249, 88);
   }
 } */

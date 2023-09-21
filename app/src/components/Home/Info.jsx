@@ -3,7 +3,7 @@ const Info = () => {
   return (
     <section className=" flex flex-col-reverse items-center gap-5 md:flex-row">
       <div className="flex flex-col gap-5 text-start">
-        <h1 className=" text-3xl  font-bold text-slate-900 md:text-2xl lg:text-3xl xl:text-5xl">
+        <h1 className=" text-3xl  font-bold text-slate-900 dark:text-white md:text-2xl lg:text-3xl xl:text-5xl">
           Shantanu Sutar <span>👋</span>
         </h1>
         <h3 className=" flex items-center gap-2 text-base text-slate-800 md:text-base lg:text-xl xl:text-2xl">

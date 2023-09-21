@@ -1,4 +1,4 @@
-const Big = ({ handleClick, active }) => {
+const Big = ({ handleClick, active, handleThemeSwitch }) => {
   return (
     <nav className=" hidden items-center justify-between gap-8  md:flex">
       <a href="/" className="  font-semibold uppercase md:text-xl lg:text-2xl">
@@ -11,7 +11,9 @@ const Big = ({ handleClick, active }) => {
               href="#home"
               onClick={(e) => handleClick(e)}
               className={`${
-                active[0].state ? "active" : "border-black hover:border-b-2"
+                active[0].state
+                  ? "active border-black hover:border-b-2  dark:border-white"
+                  : "border-black hover:border-b-2  dark:border-white"
               }`}
               data-name="home"
             >
@@ -23,7 +25,9 @@ const Big = ({ handleClick, active }) => {
               href="#about"
               onClick={(e) => handleClick(e)}
               className={`${
-                active[1].state ? "active" : "border-black hover:border-b-2"
+                active[1].state
+                  ? "active border-black hover:border-b-2  dark:border-white"
+                  : "border-black hover:border-b-2  dark:border-white"
               }`}
               data-name="about"
             >
@@ -35,7 +39,9 @@ const Big = ({ handleClick, active }) => {
               href="#skills"
               onClick={(e) => handleClick(e)}
               className={`${
-                active[2].state ? "active" : "border-black hover:border-b-2"
+                active[2].state
+                  ? "active border-black hover:border-b-2  dark:border-white"
+                  : "border-black hover:border-b-2  dark:border-white"
               }`}
               data-name="skills"
             >
@@ -47,7 +53,9 @@ const Big = ({ handleClick, active }) => {
               href="#work"
               onClick={(e) => handleClick(e)}
               className={`${
-                active[3].state ? "active" : "border-black hover:border-b-2"
+                active[3].state
+                  ? "active border-black hover:border-b-2  dark:border-white"
+                  : "border-black hover:border-b-2  dark:border-white"
               }`}
               data-name="work"
             >
@@ -59,7 +67,9 @@ const Big = ({ handleClick, active }) => {
               href="#projects"
               onClick={(e) => handleClick(e)}
               className={`${
-                active[4].state ? "active" : "border-black hover:border-b-2"
+                active[4].state
+                  ? "active border-black hover:border-b-2  dark:border-white"
+                  : "border-black hover:border-b-2  dark:border-white"
               }`}
               data-name="projects"
             >
@@ -71,12 +81,17 @@ const Big = ({ handleClick, active }) => {
               href="#contact"
               onClick={(e) => handleClick(e)}
               className={`${
-                active[5].state ? "active" : "border-black hover:border-b-2"
+                active[5].state
+                  ? "active border-black hover:border-b-2  dark:border-white"
+                  : "border-black hover:border-b-2  dark:border-white"
               }`}
               data-name="contact"
             >
               Contact
             </a>
+          </li>
+          <li>
+            <button onClick={handleThemeSwitch}>Toggle</button>
           </li>
         </ul>
       </div>
