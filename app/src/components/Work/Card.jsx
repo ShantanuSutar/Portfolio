@@ -44,12 +44,14 @@ const Card = ({ item }) => {
   return (
     <div
       className=" flex min-h-[16rem] w-[300px] flex-col flex-wrap justify-evenly
-      gap-2  px-8 py-8 shadow-xl lg:min-w-[320px] lg:px-10 lg:py-4"
+      gap-2  px-8 py-8 text-slate-900 shadow-xl dark:text-slate-100 lg:min-w-[320px] lg:px-10 lg:py-4"
     >
       <div className=" text-xl lg:text-2xl">{icon}</div>
-      <h3 className=" text-lg font-medium lg:text-xl">{title}</h3>
+      <h3 className=" text-lg font-medium dark:text-slate-200 lg:text-xl">
+        {title}
+      </h3>
       <span
-        className=" flex cursor-pointer items-center gap-2 text-sm text-slate-500 hover:underline"
+        className=" flex cursor-pointer items-center gap-2 text-sm text-slate-600 hover:underline dark:text-slate-400"
         onClick={(e) => handleView(e)}
         data-name="open-source"
       >
@@ -61,14 +63,16 @@ const Card = ({ item }) => {
           active[0].state ? "modal-active" : "hidden"
         }`}
       >
-        <div className=" relative flex w-[500px] flex-col gap-8 rounded-2xl bg-white px-10 py-12 text-center shadow-2xl">
+        <div className=" relative flex w-[500px] flex-col gap-8 rounded-2xl  bg-slate-100 px-10  py-12 text-center shadow-2xl dark:bg-slate-500">
           <AiOutlineClose
-            className=" absolute right-6 top-6 cursor-pointer text-2xl  text-slate-500 transition-all duration-200 ease-linear  hover:rotate-90"
+            className=" absolute right-6 top-6 cursor-pointer text-2xl  text-slate-500 transition-all duration-200 ease-linear hover:rotate-90  dark:text-slate-100"
             onClick={handleClose}
           />
-          <h3 className=" text-2xl font-semibold">{modalTitle}</h3>
+          <h3 className=" text-2xl font-semibold dark:text-slate-50">
+            {modalTitle}
+          </h3>
           <p
-            className=" px-6 text-sm text-slate-500
+            className=" px-6 text-sm text-slate-500 dark:text-slate-200
        "
           >
             {desc}
