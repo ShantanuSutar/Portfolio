@@ -30,7 +30,9 @@ const Header = () => {
     },
   ];
 
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
+  );
 
   useEffect(() => {
     if (theme === "dark") {
@@ -41,7 +43,7 @@ const Header = () => {
   }, [theme]);
 
   const handleThemeSwitch = () => {
-    // console.log(theme);
+    localStorage.setItem("theme", theme === "light" ? "dark" : "light");
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
@@ -57,9 +59,7 @@ const Header = () => {
       }
     });
     setActive(temp);
-    // console.log(temp);
   };
-
   return (
     <header className=" fixed z-40 w-full rounded-md bg-inherit bg-white p-3 text-lg font-medium text-slate-950  opacity-100 shadow-lg transition-all duration-500 dark:bg-slate-900 dark:text-white md:max-w-[80%]">
       {/* // <header className=" text-lg font-medium p-3 shadow-md"> */}
