@@ -30,9 +30,9 @@ const Experience = ({ toggle }) => {
     <div className={`${toggle && "hidden"}`}>
       <div className=" flex min-h-full min-w-[500px] flex-col justify-center">
         <div className="w-full px-2 py-3 sm:mx-auto sm:max-w-xl sm:px-0">
-          <div className="relative text-sm font-semibold text-gray-700 antialiased">
+          <div className="relative text-sm font-semibold text-gray-700 antialiased dark:text-slate-300">
             {/* <!-- Vertical bar running through middle --> */}
-            <div className=" absolute left-1/2 h-full w-1 -translate-x-1/2 transform bg-slate-600 sm:block"></div>
+            <div className=" absolute left-1/2 h-full w-1 -translate-x-1/2 transform bg-slate-600 dark:bg-slate-400 sm:block"></div>
 
             {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
             {data.map((item) => {

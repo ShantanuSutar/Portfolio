@@ -15,9 +15,11 @@ const Card = ({ item }) => {
           } `}
         >
           <div className="sm:w-1/2 sm:pr-8">
-            <div className="rounded bg-white p-4 font-medium shadow-md transition-all ease-linear hover:shadow-2xl ">
-              <h3 className=" text-xl text-slate-900">{title}</h3>
-              <span className="text-slate-500">{desc}</span>
+            <div className="rounded bg-white p-4 font-medium shadow-md transition-all ease-linear hover:shadow-2xl dark:bg-slate-800 hover:dark:shadow-slate-800 ">
+              <h3 className=" text-xl text-slate-900 dark:text-slate-100">
+                {title}
+              </h3>
+              <span className="text-slate-500 dark:text-slate-400">{desc}</span>
               <div className=" mt-3 flex items-center gap-2 text-slate-500">
                 <AiTwotoneCalendar />
                 {time}
