@@ -43,10 +43,10 @@ const Projects = () => {
       id="projects"
     >
       <div className=" flex flex-col items-center gap-1">
-        <h2 className=" text-2xl font-semibold text-slate-900 sm:text-4xl">
+        <h2 className=" text-3xl font-semibold text-slate-900 dark:text-white md:text-4xl">
           Projects
         </h2>
-        <span className=" text-sm text-slate-500 sm:text-base">
+        <span className="text-sm text-slate-500 lg:text-base">
           What I've built
         </span>
       </div>
@@ -56,8 +56,10 @@ const Projects = () => {
           return (
             <span
               key={i}
-              className={` cursor-pointer rounded-lg px-4 py-2 text-slate-800 duration-200 hover:-translate-y-1 hover:bg-slate-800 hover:text-white ${
-                filter.name === fil.name ? " bg-slate-800 text-white" : ""
+              className={` cursor-pointer rounded-lg px-4 py-2 text-slate-800 duration-200 hover:-translate-y-1 hover:bg-slate-800 hover:text-white dark:text-white ${
+                filter.name === fil.name
+                  ? " bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-800"
+                  : ""
               }`}
               onClick={() => setFilter({ name: fil.name })}
             >
@@ -66,29 +68,29 @@ const Projects = () => {
           );
         })}
       </div>
-      <div className=" flex flex-wrap items-center justify-around shadow-2xl sm:gap-10 sm:p-4">
+      <div className=" flex flex-wrap items-center justify-around shadow-2xl  sm:gap-10 sm:p-4">
         {projects.map((prj) => {
           return (
             <div
               key={prj.id}
-              className="flex scale-90 flex-col  justify-start p-8 text-left shadow-xl sm:scale-100"
+              className="flex scale-90 flex-col  justify-start rounded-xl p-8 text-left shadow-xl dark:shadow-slate-900 sm:scale-100"
             >
               <div className="">
                 <img
                   src={prj.image}
                   alt=""
-                  className=" absolute  z-10 h-[12rem] w-[18rem] cursor-pointer rounded-2xl bg-cover bg-center object-cover   duration-500  hover:opacity-0
+                  className="  absolute  z-10 h-[12rem] w-[17rem] cursor-pointer rounded-2xl bg-cover bg-center object-cover duration-500   hover:opacity-0  
                   "
                 />
               </div>
               <div className=" mx-2 my-5 flex flex-col gap-2">
-                <p className=" relative min-h-[12rem] w-[16rem] cursor-pointer rounded-2xl bg-cover bg-center object-cover  ">
+                <p className=" relative min-h-[12rem] w-[16rem] cursor-pointer rounded-2xl bg-cover bg-center object-cover  text-slate-900 dark:text-slate-100 ">
                   {prj.description}
                 </p>
-                <h3 className=" text-xl font-medium text-slate-900">
+                <h3 className=" text-xl font-medium text-slate-900 dark:text-slate-100">
                   {prj.title}
                 </h3>
-                <div className=" flex items-center gap-4 text-2xl text-slate-800 ">
+                <div className=" flex items-center gap-4 text-2xl text-slate-800 dark:text-slate-200 ">
                   <span className=" duration-200 hover:-translate-y-1">
                     <a href={prj.demoLink}>
                       <FiExternalLink />
