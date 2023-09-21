@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Small from "./Small";
 import Big from "./Big";
 
-const Header = () => {
+const Header = ({ theme, setTheme }) => {
   const states = [
     {
       name: "home",
@@ -30,10 +30,6 @@ const Header = () => {
     },
   ];
 
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
-  );
-
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
@@ -43,8 +39,10 @@ const Header = () => {
   }, [theme]);
 
   const handleThemeSwitch = () => {
-    localStorage.setItem("theme", theme === "light" ? "dark" : "light");
-    setTheme(theme === "dark" ? "light" : "dark");
+    localStorage.setItem(
+      "theme",
+      theme === "light" ? (theme === "color" ? "dark" : "color") : "light",
+    );
   };
 
   const [active, setActive] = useState(states);
@@ -61,13 +59,14 @@ const Header = () => {
     setActive(temp);
   };
   return (
-    <header className=" fixed z-40 w-full rounded-md bg-inherit bg-white p-3 text-lg font-medium text-slate-950  opacity-100 shadow-lg transition-all duration-500 dark:bg-slate-900 dark:text-white md:max-w-[80%]">
+    <header className="">
       {/* // <header className=" text-lg font-medium p-3 shadow-md"> */}
       <Small handleClick={handleClick} active={active} />
       <Big
         handleClick={handleClick}
         active={active}
-        handleThemeSwitch={handleThemeSwitch}
+        setTheme={setTheme}
+        theme={theme}
       />
     </header>
   );

@@ -1,11 +1,13 @@
-const Big = ({ handleClick, active, handleThemeSwitch }) => {
+import Theme from "./Theme";
+
+const Big = ({ handleClick, active, setTheme, theme }) => {
   return (
-    <nav className=" hidden items-center justify-between gap-8  md:flex">
-      <a href="/" className="  font-semibold uppercase md:text-xl lg:text-2xl">
+    <nav className=" fixed z-40 hidden w-full  items-center  justify-between gap-8 rounded-md bg-inherit bg-white p-3 text-lg font-medium text-slate-950 opacity-100  shadow-lg transition-all duration-500 dark:bg-slate-900 dark:text-white md:flex md:max-w-[80%]">
+      <a href="/" className="font-semibold uppercase md:text-xl lg:text-2xl">
         Shantanu
       </a>
       <div className="nav-menu">
-        <ul className=" flex gap-6 text-lg lg:gap-8 lg:text-xl">
+        <ul className=" flex gap-4 text-lg lg:gap-8 lg:text-xl">
           <li>
             <a
               href="#home"
@@ -48,20 +50,7 @@ const Big = ({ handleClick, active, handleThemeSwitch }) => {
               Skills
             </a>
           </li>
-          <li>
-            <a
-              href="#work"
-              onClick={(e) => handleClick(e)}
-              className={`${
-                active[3].state
-                  ? "active border-black hover:border-b-2  dark:border-white"
-                  : "border-black hover:border-b-2  dark:border-white"
-              }`}
-              data-name="work"
-            >
-              Work
-            </a>
-          </li>
+
           <li>
             <a
               href="#projects"
@@ -90,9 +79,10 @@ const Big = ({ handleClick, active, handleThemeSwitch }) => {
               Contact
             </a>
           </li>
-          <li>
+          {/* <li>
             <button onClick={handleThemeSwitch}>Toggle</button>
-          </li>
+          </li> */}
+          <Theme setTheme={setTheme} theme={theme} />
         </ul>
       </div>
     </nav>

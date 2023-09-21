@@ -13,7 +13,7 @@ const Small = ({ handleClick, active }) => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className=" z-60 fixed bottom-0 right-0 mx-auto flex w-full  max-w-[100%] items-center justify-between gap-8 bg-slate-200 p-3 px-6  text-lg font-medium opacity-100 dark:bg-slate-800 md:hidden ">
+    <nav className=" fixed bottom-0 right-0 z-50 mx-auto flex w-full  max-w-[100%] items-center justify-between gap-8 bg-slate-200 p-3 px-6 text-lg font-medium  text-slate-950 opacity-100 dark:bg-slate-800 dark:text-slate-100 md:hidden ">
       <div
         className={` ${
           !toggle ? "flex" : "hidden"
