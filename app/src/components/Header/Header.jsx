@@ -41,7 +41,7 @@ const Header = () => {
   }, [theme]);
 
   const handleThemeSwitch = () => {
-    console.log(theme);
+    // console.log(theme);
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
