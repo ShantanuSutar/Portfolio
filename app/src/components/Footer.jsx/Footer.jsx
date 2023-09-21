@@ -48,7 +48,7 @@ const Footer = () => {
             );
           })}
         </div>
-        <div className=" mt-6 text-lg  text-slate-900 dark:text-slate-100 sm:mt-10">
+        <div className=" my-6 text-lg  text-slate-900 dark:text-slate-100 sm:mt-10">
           Let's meet soon ;)
         </div>
       </div>

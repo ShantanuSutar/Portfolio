@@ -13,7 +13,7 @@ const Small = ({ handleClick, active }) => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className=" z-60 fixed bottom-0 right-0 mx-auto flex w-full  max-w-[100%] items-center justify-between gap-8 bg-slate-200 p-3  px-6 text-lg font-medium opacity-100 md:hidden ">
+    <nav className=" z-60 fixed bottom-0 right-0 mx-auto flex w-full  max-w-[100%] items-center justify-between gap-8 bg-slate-200 p-3 px-6  text-lg font-medium opacity-100 dark:bg-slate-800 md:hidden ">
       <div
         className={` ${
           !toggle ? "flex" : "hidden"
@@ -22,7 +22,7 @@ const Small = ({ handleClick, active }) => {
         <span>Shantanu</span>
         <span>
           <AiOutlineAppstore
-            className=" cursor-pointer duration-200 hover:scale-125"
+            className=" cursor-pointer text-slate-900 duration-200 hover:scale-125 dark:text-slate-100"
             onClick={() => setToggle(true)}
           />
         </span>
@@ -39,7 +39,9 @@ const Small = ({ handleClick, active }) => {
                 href="#home"
                 onClick={(e) => handleClick(e)}
                 className={`${
-                  active[0].state ? "active" : "border-black hover:border-b-2"
+                  active[0].state
+                    ? "active dark:border-white"
+                    : "border-black  hover:border-b-2 dark:border-white"
                 } flex flex-col items-center`}
                 data-name="home"
               >
@@ -54,7 +56,9 @@ const Small = ({ handleClick, active }) => {
                 href="#about"
                 onClick={(e) => handleClick(e)}
                 className={`${
-                  active[1].state ? "active" : "border-black hover:border-b-2"
+                  active[1].state
+                    ? "active dark:border-white"
+                    : "border-black hover:border-b-2  dark:border-white"
                 } flex flex-col items-center`}
                 data-name="about"
               >
@@ -69,7 +73,9 @@ const Small = ({ handleClick, active }) => {
                 href="#skills"
                 onClick={(e) => handleClick(e)}
                 className={`${
-                  active[2].state ? "active" : "border-black hover:border-b-2"
+                  active[2].state
+                    ? "active dark:border-white"
+                    : "border-black hover:border-b-2  dark:border-white"
                 } flex flex-col items-center`}
                 data-name="skills"
               >
@@ -87,7 +93,9 @@ const Small = ({ handleClick, active }) => {
                 href="#work"
                 onClick={(e) => handleClick(e)}
                 className={`${
-                  active[3].state ? "active" : "border-black hover:border-b-2"
+                  active[3].state
+                    ? "active dark:border-white"
+                    : "border-black hover:border-b-2  dark:border-white"
                 } flex flex-col items-center`}
                 data-name="work"
               >
@@ -102,7 +110,9 @@ const Small = ({ handleClick, active }) => {
                 href="#projects"
                 onClick={(e) => handleClick(e)}
                 className={`${
-                  active[4].state ? "active" : "border-black hover:border-b-2"
+                  active[4].state
+                    ? "active dark:border-white"
+                    : "border-black hover:border-b-2  dark:border-white"
                 } flex flex-col items-center`}
                 data-name="projects"
               >
@@ -117,7 +127,9 @@ const Small = ({ handleClick, active }) => {
                 href="#contact"
                 onClick={(e) => handleClick(e)}
                 className={`${
-                  active[5].state ? "active" : "border-black hover:border-b-2"
+                  active[5].state
+                    ? "active dark:border-white"
+                    : "border-black hover:border-b-2  dark:border-white"
                 } flex flex-col items-center`}
                 data-name="contact"
               >
