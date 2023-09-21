@@ -51,7 +51,7 @@ const Contact = () => {
           <form
             action="https://formspree.io/f/xdorwzrj"
             method="POST"
-            className=" group w-96"
+            className=" group w-96 pl-4 sm:pl-0"
             noValidate
           >
             <div className=" relative m-2 h-14 scale-75 sm:scale-90 md:scale-100">

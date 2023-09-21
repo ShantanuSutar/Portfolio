@@ -5,13 +5,13 @@ import Socials from "./Socials";
 const Home = () => {
   return (
     <section
-      className="h-[100%] flex items-center   border border-yellow-400 pt-20"
+      className="flex min-h-[100%] items-center   border border-yellow-400 px-5 sm:pt-20 md:px-0"
       id="home"
     >
       <div className=" mt-20">
-        <div className=" flex gap-40 mb-16">
+        <div className=" mb-16 flex  md:flex-row md:gap-16 lg:gap-40">
           <Socials />
-          <div>
+          <div className=" ml-10">
             <Info />
           </div>
         </div>

@@ -1,10 +1,10 @@
 const ScrollDown = () => {
   return (
-    <div className=" text-slate-950 ml-[12rem] flex items-center my-auto gap-5">
+    <div className=" invisible my-auto ml-10 flex items-center gap-2 text-slate-950 sm:visible md:ml-20  md:scale-90 lg:ml-[12rem]  lg:scale-100 lg:gap-5">
       <span className="scroll-btn flex flex-col text-xl font-medium">
         <a
           href="#about"
-          className=" hover:translate-y-[-9px] transition-all ease-in duration-200"
+          className=" transition-all duration-200 ease-in hover:translate-y-[-9px]"
         >
           <span className="mouse">
             <span></span>

@@ -1,29 +1,33 @@
 import { BsFillSendFill } from "react-icons/bs";
 const Info = () => {
   return (
-    <section className=" flex items-center gap-5">
+    <section className=" flex flex-col-reverse items-center gap-5 md:flex-row">
       <div className="flex flex-col gap-5 text-start">
-        <h1 className=" text-5xl font-bold text-slate-900">
+        <h1 className=" text-3xl  font-bold text-slate-900 md:text-2xl lg:text-3xl xl:text-5xl">
           Shantanu Sutar <span>👋</span>
         </h1>
-        <h3 className=" flex items-center gap-2 text-2xl text-slate-800">
-          <hr className="w-24 border-black" />
+        <h3 className=" flex items-center gap-2 text-base text-slate-800 md:text-base lg:text-xl xl:text-2xl">
+          <hr className="w-4 border-black md:w-12 lg:w-24" />
           Frontend Developer<span>💻</span>
         </h3>
-        <p className=" text-slate-700 max-w-[80%]">
+        <p className=" max-w-[95%] text-slate-700 sm:max-w-[80%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
           dolores,soluta, labore voluptatum consequuntur quam vitae dolor
           voluptatem
         </p>
         <a
           href="#contact"
-          className=" px-6 py-4 bg-slate-950 text-slate-200 text-md rounded-xl max-w-[10rem] flex items-center justify-center font-medium hover:opacity-90 ease-in-out transition duration-75 gap-3"
+          className=" text-md flex max-w-[10rem] items-center justify-center gap-3 rounded-xl bg-slate-950 px-6 py-4 font-medium text-slate-200 transition duration-75 ease-in-out hover:opacity-90  md:scale-90 lg:scale-100"
         >
           Say Hello <BsFillSendFill />
         </a>
       </div>
       <div className=" mr-8">
-        <img src="../src/assets/FormalPhoto.jpg" alt="" className="home-img" />
+        <img
+          src="../src/assets/FormalPhoto.jpg"
+          alt=""
+          className="home-img h-[15rem] w-[15rem] md:h-[14rem] md:w-[14rem] lg:h-[18rem] lg:w-[18rem] xl:h-[22rem] xl:w-[22rem] "
+        />
       </div>
     </section>
   );

@@ -25,7 +25,7 @@ const Scrollup = () => {
     <>
       {show && (
         <div
-          className=" fixed right-10 bottom-12 bg-slate-950 py-4 px-4 rounded-lg text-white text-2xl hover:opacity-90 cursor-pointer shadow-2xl"
+          className=" fixed bottom-8 right-6 scale-90 cursor-pointer rounded-lg bg-slate-950 px-4 py-4 text-2xl text-white shadow-2xl hover:opacity-90 sm:bottom-12 sm:right-10 sm:scale-100"
           onClick={scrollToTop}
         >
           <a href="#">
