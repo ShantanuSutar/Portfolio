@@ -39,20 +39,24 @@ const Projects = () => {
   // console.log(projects)
   return (
     <section
-      className=" w-full min-h-[90%] pt-20 border border-yellow-400 flex flex-col gap-12 text-center"
+      className=" flex min-h-[90%] w-full flex-col gap-6 border border-yellow-400 pt-20 text-center sm:gap-12"
       id="projects"
     >
       <div className=" flex flex-col items-center gap-1">
-        <h2 className=" text-4xl font-semibold">Projects</h2>
-        <span className=" text-slate-500">What I've built</span>
+        <h2 className=" text-2xl font-semibold text-slate-900 sm:text-4xl">
+          Projects
+        </h2>
+        <span className=" text-sm text-slate-500 sm:text-base">
+          What I've built
+        </span>
       </div>
 
-      <div className=" flex items-center justify-center gap-8 capitalize text-xl">
+      <div className=" flex items-center justify-center gap-3 capitalize sm:gap-8 sm:text-xl">
         {filters.map((fil, i) => {
           return (
             <span
               key={i}
-              className={` hover:bg-slate-800 hover:text-white py-2 px-4 rounded-lg duration-200 hover:-translate-y-1 cursor-pointer ${
+              className={` cursor-pointer rounded-lg px-4 py-2 text-slate-800 duration-200 hover:-translate-y-1 hover:bg-slate-800 hover:text-white ${
                 filter.name === fil.name ? " bg-slate-800 text-white" : ""
               }`}
               onClick={() => setFilter({ name: fil.name })}
@@ -62,26 +66,35 @@ const Projects = () => {
           );
         })}
       </div>
-      <div className=" flex flex-wrap gap-10 p-4 items-center justify-around shadow-2xl">
+      <div className=" flex flex-wrap items-center justify-around shadow-2xl sm:gap-10 sm:p-4">
         {projects.map((prj) => {
           return (
-            <div key={prj.id} className="text-left shadow-xl p-8">
-              <img
-                src={prj.image}
-                alt=""
-                className=" w-[18rem] h-[12rem] rounded-2xl object-cover bg-center bg-cover duration-300 hover:-translate-y-5 cursor-pointer"
-              />
-              <div className=" flex flex-col mx-2 my-5 gap-2">
-                <h3 className=" text-xl text-slate-900 font-medium">
+            <div
+              key={prj.id}
+              className="flex scale-90 flex-col  justify-start p-8 text-left shadow-xl sm:scale-100"
+            >
+              <div className="">
+                <img
+                  src={prj.image}
+                  alt=""
+                  className=" absolute  z-10 h-[12rem] w-[18rem] cursor-pointer rounded-2xl bg-cover bg-center object-cover   duration-500  hover:opacity-0
+                  "
+                />
+              </div>
+              <div className=" mx-2 my-5 flex flex-col gap-2">
+                <p className=" relative min-h-[12rem] w-[16rem] cursor-pointer rounded-2xl bg-cover bg-center object-cover  ">
+                  {prj.description}
+                </p>
+                <h3 className=" text-xl font-medium text-slate-900">
                   {prj.title}
                 </h3>
                 <div className=" flex items-center gap-4 text-2xl text-slate-800 ">
-                  <span className=" hover:-translate-y-1 duration-200">
+                  <span className=" duration-200 hover:-translate-y-1">
                     <a href={prj.demoLink}>
                       <FiExternalLink />
                     </a>
                   </span>
-                  <span className=" hover:-translate-y-1 duration-200">
+                  <span className=" duration-200 hover:-translate-y-1">
                     <a href={prj.repoLink}>
                       <FaGithubSquare />
                     </a>
