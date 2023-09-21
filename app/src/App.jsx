@@ -21,8 +21,8 @@ function App() {
       {/* <Qualification /> */}
       {/* <Projects /> */}
       {/* <Testimonials /> */}
-      <Contact />
-      {/* <Footer /> */}
+      {/* <Contact /> */}
+      <Footer />
       {/* <Scrollup /> */}
     </div>
   );

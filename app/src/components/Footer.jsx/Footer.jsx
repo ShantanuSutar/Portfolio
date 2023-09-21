@@ -3,13 +3,13 @@ const Footer = () => {
   const socials = Socials;
   //   console.log(socials);
   return (
-    <footer className=" w-full min-h-[60%] pt-24 border border-yellow-400 flex flex-col gap-10 text-center">
+    <footer className=" flex min-h-[60%] w-full scale-75 flex-col gap-10 border border-yellow-400 pt-24 text-center sm:scale-90 md:scale-100">
       <div className=" flex flex-col items-center gap-4">
-        <h1 className=" uppercase text-4xl font-bold [word-spacing:14px]">
+        <h1 className="  text-2xl font-bold uppercase [word-spacing:14px] sm:text-3xl md:text-4xl">
           the best is yet to come
         </h1>
-        <div className=" mt-8">
-          <ul className=" flex text-lg gap-7 text-slate-600">
+        <div className=" mt-4 sm:mt-8">
+          <ul className=" flex gap-7 text-lg text-slate-600">
             <li>
               <a href="#about" className=" hover:text-slate-900">
                 About
@@ -27,19 +27,21 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className=" flex text-3xl gap-8 text-slate-900 mt-2">
+        <div className=" flex gap-8 text-2xl text-slate-900 sm:mt-2 sm:text-3xl">
           {socials.map((social) => {
             return (
               <span
                 key={social.id}
-                className=" hover:text-slate-700 duration-150"
+                className=" duration-150 hover:text-slate-700"
               >
                 <a href={social.link}>{social.icon}</a>
               </span>
             );
           })}
         </div>
-        <div className=" mt-10  text-slate-900 text-lg">Let's meet soon ;)</div>
+        <div className=" mt-6 text-lg  text-slate-900 sm:mt-10">
+          Let's meet soon ;)
+        </div>
       </div>
     </footer>
   );
