@@ -1,16 +1,23 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Theme = ({ setTheme, theme }) => {
   const [show, setShow] = useState(false);
 
+  let showRef = useRef();
+  useEffect(() => {
+    let handler = (e) => {
+      if (!showRef.current.contains(e.target)) {
+        setShow(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handler);
+  });
+
   return (
-    <li className=" transition  ease-linear">
+    <li ref={showRef} className="">
       <button
-        id="dropdownDelayButton"
-        data-dropdown-toggle="dropdownDelay"
-        data-dropdown-delay="500"
-        data-dropdown-trigger="hover"
-        className="inline-flex items-center rounded-lg  text-center text-lg font-medium lg:text-xl"
+        className="inline-flex items-center border-b-2 border-transparent text-center text-lg font-medium  hover:border-black dark:hover:border-white lg:text-xl"
         type="button"
         onClick={() => {
           setShow(!show);
@@ -35,15 +42,11 @@ const Theme = ({ setTheme, theme }) => {
       </button>
       {/* <!-- Dropdown menu --> */}
       <div
-        id="dropdownDelay"
-        className={` absolute right-0 top-12 z-10 divide-y divide-gray-100 rounded-lg  bg-inherit  bg-white pt-2 shadow dark:bg-gray-700 ${
-          show ? "" : "hidden"
-        }`}
+        className={` absolute right-0 top-12 z-10 divide-y divide-gray-100 rounded-lg  bg-inherit  bg-white pt-2 shadow  dark:bg-gray-700 ${
+          show ? "visible" : "hidden"
+        } `}
       >
-        <ul
-          className={` flex flex-col text-lg lg:text-xl`}
-          aria-labelledby="dropdownDelayButton"
-        >
+        <ul className={` flex flex-col text-lg lg:text-xl`}>
           <li
             className=" block cursor-pointer px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
             onClick={() => {

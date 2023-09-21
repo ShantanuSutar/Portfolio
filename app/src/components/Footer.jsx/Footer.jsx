@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className=" flex min-h-[60%] w-full  flex-col gap-10  pt-10 text-center sm:pt-24 ">
       <div className=" flex scale-75 flex-col items-center gap-4 sm:scale-90 md:scale-100">
-        <h1 className="  text-2xl font-bold uppercase text-slate-950 [word-spacing:14px] dark:text-slate-100 sm:text-3xl md:text-4xl">
+        <h1 className="  text-2xl font-bold uppercase text-slate-900 [word-spacing:14px] dark:text-slate-100 sm:text-3xl md:text-4xl">
           the best is yet to come
         </h1>
         <div className=" mt-4 sm:mt-8">
