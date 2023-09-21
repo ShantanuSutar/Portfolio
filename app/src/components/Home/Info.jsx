@@ -6,18 +6,18 @@ const Info = () => {
         <h1 className=" text-3xl  font-bold text-slate-900 dark:text-white md:text-2xl lg:text-3xl xl:text-5xl">
           Shantanu Sutar <span>👋</span>
         </h1>
-        <h3 className=" flex items-center gap-2 text-base text-slate-800 md:text-base lg:text-xl xl:text-2xl">
-          <hr className="w-4 border-black md:w-12 lg:w-24" />
+        <h3 className=" flex items-center gap-2 text-base text-slate-800 dark:text-slate-300 md:text-base lg:text-xl xl:text-2xl">
+          <hr className="w-4 border-black dark:border-white md:w-12 lg:w-24" />
           Frontend Developer<span>💻</span>
         </h3>
-        <p className=" max-w-[95%] text-slate-700 sm:max-w-[80%]">
+        <p className=" max-w-[95%] text-slate-700 dark:text-slate-300 sm:max-w-[80%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
           dolores,soluta, labore voluptatum consequuntur quam vitae dolor
           voluptatem
         </p>
         <a
           href="#contact"
-          className=" text-md flex max-w-[10rem] items-center justify-center gap-3 rounded-xl bg-slate-950 px-6 py-4 font-medium text-slate-200 transition duration-75 ease-in-out hover:opacity-90  md:scale-90 lg:scale-100"
+          className=" text-md flex max-w-[10rem] items-center justify-center gap-3 rounded-xl bg-slate-950 px-6 py-4 font-medium text-slate-200 transition  duration-150 ease-in-out hover:opacity-90 dark:bg-slate-100 dark:text-slate-900  md:scale-90 lg:scale-100 "
         >
           Say Hello <BsFillSendFill />
         </a>

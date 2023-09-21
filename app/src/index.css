@@ -105,28 +105,37 @@ html {
 
 /* HOME SCROLL BTN */
 
-.scroll-btn > * {
+/* .scroll-btn > * {
   display: inline-block;
   line-height: 18px;
   font-size: 13px;
   font-weight: normal;
   color: black;
-  color: black;
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 2px;
+}
+.scroll-btn.dark > * {
+  color: white;
 }
 .scroll-btn > *:hover,
 .scroll-btn > *:focus,
 .scroll-btn > *.active {
   color: black;
-}
-.scroll-btn > *:hover,
+} */
+
+/* .scroll-btn.dark > *:hover,
+.scroll-btn.dark > *:focus,
+.scroll-btn.dark > *.active {
+  color: white;
+} */
+
+/* .scroll-btn > *:hover,
 .scroll-btn > *:focus,
 .scroll-btn > *:active,
 .scroll-btn > *.active {
   opacity: 0.8;
   filter: alpha(opacity=80);
-}
+} */
 .scroll-btn .mouse {
   position: relative;
   display: block;
@@ -136,9 +145,15 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: 3px solid black;
+  border: 3px solid #020617;
   border-radius: 23px;
 }
+/* .scroll-btn .mouse.dark {
+  border-color: white;
+}
+.scroll-btn .mouse.dark > * {
+  background-color: white;
+} */
 .scroll-btn .mouse > * {
   position: absolute;
   display: block;
@@ -147,7 +162,7 @@ html {
   width: 8px;
   height: 8px;
   margin: -4px 0 0 -4px;
-  background: black;
+  background: #020617;
   border-radius: 50%;
   -webkit-animation: ani-mouse 2.5s linear infinite;
   -moz-animation: ani-mouse 2.5s linear infinite;

@@ -61,7 +61,7 @@ const Header = () => {
   };
 
   return (
-    <header className=" fixed z-40 w-full rounded-md bg-inherit bg-white p-3 text-lg font-medium text-slate-950  opacity-100 shadow-lg dark:bg-slate-900 dark:text-white md:max-w-[80%]">
+    <header className=" fixed z-40 w-full rounded-md bg-inherit bg-white p-3 text-lg font-medium text-slate-950  opacity-100 shadow-lg transition-all duration-500 dark:bg-slate-900 dark:text-white md:max-w-[80%]">
       {/* // <header className=" text-lg font-medium p-3 shadow-md"> */}
       <Small handleClick={handleClick} active={active} />
       <Big
