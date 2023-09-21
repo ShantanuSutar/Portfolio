@@ -13,9 +13,9 @@ import Work from "./components/Work/Work";
 function App() {
   return (
     <div className=" container mx-auto h-screen sm:max-w-[80%]">
-      {/* <Header /> */}
+      <Header />
       <Home />
-      {/* <About />
+      <About />
       <Skills />
       <Work />
       <Qualification />
@@ -23,7 +23,7 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
-      <Scrollup /> */}
+      <Scrollup />
     </div>
   );
 }
