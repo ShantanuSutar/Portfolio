@@ -53,12 +53,14 @@ const Testimonials = () => {
       id="testimonials"
     >
       <div className=" flex flex-col items-center gap-1">
-        <h2 className=" text-2xl font-semibold sm:text-4xl">Testimonials</h2>
-        <span className=" text-sm text-slate-500 sm:text-base">
+        <h2 className=" text-3xl font-semibold text-slate-900 dark:text-white md:text-4xl">
+          Testimonials
+        </h2>
+        <span className="text-sm text-slate-500 lg:text-base">
           People about my work
         </span>
       </div>
-      <div className=" mx-4 max-w-full rounded-2xl bg-gray-200 shadow-2xl sm:mx-0 lg:mx-36">
+      <div className=" da mx-4 max-w-full rounded-2xl bg-slate-200 shadow-2xl dark:bg-slate-700 sm:mx-0 lg:mx-36">
         <div className=" m-auto">
           <div className="group relative m-auto w-full">
             <div className="group relative m-auto flex flex-col items-center gap-4 py-8 lg:px-24 ">
@@ -66,17 +68,19 @@ const Testimonials = () => {
                 style={{ backgroundImage: `url(${data[currentIndex].img})` }}
                 className="h-[6rem] w-[6rem] rounded-full bg-cover bg-center object-cover duration-700"
               ></div>
-              <h3>{data[currentIndex].name}</h3>
-              <p className=" mt-6 text-sm sm:mt-4 sm:text-base md:mb-10">
+              <h3 className=" text-lg text-slate-950 dark:text-slate-100">
+                {data[currentIndex].name}
+              </h3>
+              <p className=" mt-6 text-sm text-slate-950 dark:text-slate-300 sm:mt-4 sm:text-base md:mb-10">
                 {data[currentIndex].desc}
               </p>
             </div>
             {/* Left Arrow */}
-            <div className="absolute left-5 top-[45%] hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white hover:text-slate-500 group-hover:block sm:top-[50%]">
+            <div className="absolute left-5 top-[45%] hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white hover:text-slate-500 group-hover:block dark:bg-white/20 dark:text-slate-900 dark:hover:text-slate-200 sm:top-[50%]">
               <BsArrowLeft onClick={prevSlide} size={30} />
             </div>
             {/* Right Arrow */}
-            <div className="absolute right-5 top-[45%] hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white hover:text-slate-500 group-hover:block sm:top-[50%]">
+            <div className="absolute right-5 top-[45%] hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white hover:text-slate-500 group-hover:block dark:bg-white/20 dark:text-slate-900 dark:hover:text-slate-200 sm:top-[50%]">
               <BsArrowRight onClick={nextSlide} size={30} />
             </div>
             {/* Dot Slider */}
@@ -89,7 +93,9 @@ const Testimonials = () => {
                 >
                   <RxDotFilled
                     className={`${
-                      currentIndex === slideIndex ? "" : " text-slate-500"
+                      currentIndex === slideIndex
+                        ? " text-slate-950"
+                        : " text-slate-500 dark:text-slate-200"
                     }`}
                   />
                 </div>
