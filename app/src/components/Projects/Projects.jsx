@@ -39,7 +39,7 @@ const Projects = () => {
   // console.log(projects)
   return (
     <section
-      className=" flex min-h-[90%] w-full flex-col gap-6 border border-yellow-400 pt-20 text-center sm:gap-12"
+      className=" flex min-h-[90%] w-full flex-col gap-6  pt-20 text-center sm:gap-12"
       id="projects"
     >
       <div className=" flex flex-col items-center gap-1">
@@ -51,7 +51,7 @@ const Projects = () => {
         </span>
       </div>
 
-      <div className=" flex items-center justify-center gap-3 capitalize sm:gap-8 sm:text-xl">
+      <div className=" flex items-center justify-center  capitalize sm:gap-8 sm:text-xl">
         {filters.map((fil, i) => {
           return (
             <span

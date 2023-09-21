@@ -29,11 +29,11 @@ const Small = ({ handleClick, active }) => {
       </div>
       <div className="nav-menu w-full">
         <ul
-          className={` ${
+          className={` font-thin ${
             toggle ? "flex" : "hidden"
           } w-full flex-col gap-4 pb-5 `}
         >
-          <div className=" grid min-h-[4rem] grid-cols-3 items-center  gap-12 ">
+          <div className=" grid min-h-[4rem] grid-cols-3 items-center gap-12 ">
             <li>
               <a
                 href="#home"

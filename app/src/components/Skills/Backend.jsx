@@ -21,8 +21,8 @@ const BackEnd = () => {
 
   return (
     <div
-      className=" flex flex-col items-center justify-center gap-10 px-16 py-8
-   text-left shadow-lg transition-all ease-linear hover:shadow-2xl"
+      className="  flex flex-col items-center justify-center gap-10 px-0 py-8 text-left
+      shadow-lg transition-all ease-linear hover:shadow-2xl md:px-16"
     >
       <h3 className=" text-xl font-semibold text-black  lg:text-3xl">
         BackEnd

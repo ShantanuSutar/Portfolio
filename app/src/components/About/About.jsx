@@ -2,10 +2,7 @@ import AboutInfo from "./AboutInfo";
 import { CgFileDocument } from "react-icons/cg";
 const About = () => {
   return (
-    <div
-      className=" min-h-[90%] w-full border border-yellow-400 pt-5 md:pt-20 "
-      id="about"
-    >
+    <div className=" min-h-[90%] w-full  pt-5 md:pt-20 " id="about">
       <div className=" mx-auto flex flex-col items-center gap-1 ">
         <h2 className=" text-2xl font-semibold md:text-4xl">About Me</h2>
         <span className=" text-slate-500">My Introduction</span>

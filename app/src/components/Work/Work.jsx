@@ -5,10 +5,7 @@ const Work = () => {
   const data = Data;
 
   return (
-    <section
-      className="min-h-[90%] w-full border border-yellow-400 pb-10 pt-20"
-      id="work"
-    >
+    <section className="min-h-[90%] w-full  pb-10 pt-20" id="work">
       <div className=" flex flex-col items-center gap-1">
         <h2 className=" text-3xl font-semibold md:text-4xl">Work</h2>
         <span className=" text-sm text-slate-700 lg:text-base">

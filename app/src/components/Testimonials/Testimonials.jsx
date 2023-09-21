@@ -49,7 +49,7 @@ const Testimonials = () => {
   };
   return (
     <section
-      className=" flex min-h-[90%] w-full flex-col gap-16 border border-yellow-400 pb-4 pt-20 text-center"
+      className=" flex min-h-[90%] w-full flex-col gap-16  pb-4 pt-20 text-center"
       id="testimonials"
     >
       <div className=" flex flex-col items-center gap-1">

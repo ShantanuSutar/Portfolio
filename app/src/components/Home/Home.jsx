@@ -5,7 +5,7 @@ import Socials from "./Socials";
 const Home = () => {
   return (
     <section
-      className="flex min-h-[100%] items-center   border border-yellow-400 px-5 md:px-0 md:pt-12 lg:pt-20"
+      className="flex min-h-[100%] items-center    px-5 md:px-0 md:pt-12 lg:pt-20"
       id="home"
     >
       <div className=" mt-20">

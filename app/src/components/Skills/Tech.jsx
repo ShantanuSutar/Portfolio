@@ -8,7 +8,9 @@ const Tech = ({ title, tech }) => {
           <HiBadgeCheck className=" text-2xl" />
           {title}
         </h3>
-        <span className=" capitalize text-slate-600">{tech}</span>
+        <span className=" mt-[3px] capitalize text-slate-600 sm:mt-0">
+          {tech}
+        </span>
       </div>
     </div>
   );
