@@ -20,8 +20,8 @@ function App() {
       {/* <Work /> */}
       {/* <Qualification /> */}
       {/* <Projects /> */}
-      <Testimonials />
-      {/* <Contact /> */}
+      {/* <Testimonials /> */}
+      <Contact />
       {/* <Footer /> */}
       {/* <Scrollup /> */}
     </div>

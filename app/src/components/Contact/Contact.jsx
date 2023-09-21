@@ -10,17 +10,19 @@ const Contact = () => {
   // console.log(socials);
   return (
     <section
-      className=" w-full min-h-screen pt-14 border border-yellow-400 flex flex-col gap-10 text-center"
+      className=" flex min-h-screen w-full flex-col gap-10 border border-yellow-400 pt-14 text-center"
       id="contact"
     >
       <div className=" flex flex-col items-center gap-1">
-        <h2 className=" text-4xl font-semibold">Contact</h2>
-        <span className=" text-slate-500">Get in Touch</span>
+        <h2 className=" text-3xl font-semibold sm:text-4xl">Contact</h2>
+        <span className=" text-sm text-slate-500 sm:text-base">
+          Get in Touch
+        </span>
       </div>
-      <div className=" grid grid-cols-2">
-        <div className=" flex flex-col gap-10">
-          <h3 className="  text-2xl font-medium">Talk to me</h3>
-          <div className=" flex flex-col gap-10">
+      <div className=" flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-0">
+        <div className=" flex flex-col gap-6 md:gap-10">
+          <h3 className=" text-xl font-medium md:text-2xl">Talk to me</h3>
+          <div className=" flex flex-col gap-6 md:gap-10">
             {socials.map((social) => {
               return (
                 <div
@@ -34,7 +36,7 @@ const Contact = () => {
                   <span className=" text-xs text-slate-500">
                     {social.username}
                   </span>
-                  <span className=" flex items-center gap-2 mt-2 clear-left text-slate-600 cursor-pointer hover:bg-slate-200 p-2 hover:rounded-lg duration-150">
+                  <span className=" clear-left mt-2 flex cursor-pointer items-center gap-2 p-2 text-slate-600 duration-150 hover:rounded-lg hover:bg-slate-200">
                     Write me <BsArrowRight className="" />
                   </span>
                 </div>
@@ -42,15 +44,17 @@ const Contact = () => {
             })}
           </div>
         </div>
-        <div className=" flex flex-col items-center justify-center gap-8">
-          <h3 className=" text-2xl font-medium">Write me a message</h3>
+        <div className=" flex flex-col items-center justify-center gap-4 md:gap-8">
+          <h3 className=" text-xl font-medium md:text-2xl">
+            Write me a message
+          </h3>
           <form
             action="https://formspree.io/f/xdorwzrj"
             method="POST"
-            className=" w-96    group"
+            className=" group w-96"
             noValidate
           >
-            <div className=" relative m-2 h-16">
+            <div className=" relative m-2 h-14 scale-75 sm:scale-90 md:scale-100">
               <input
                 type="text"
                 name="name"
@@ -58,20 +62,20 @@ const Contact = () => {
                 id="name"
                 required
                 pattern=".{3,}"
-                className="block py-3.5 px-2 w-full text-sm text-gray-900 bg-transparent border-2  border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-black peer rounded-xl absolute z-10   peer invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500"
+                className="peer peer absolute z-10 block  w-[90%] appearance-none rounded-xl border-2  border-gray-300 bg-transparent  px-2 py-3.5 text-sm text-gray-900 focus:border-black focus:outline-none focus:ring-0 md:w-full invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500"
               />
               <label
                 htmlFor="name"
-                className="peer-focus:font-medium absolute text-lg text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 bg-white left-5 z-20 origin-[0] peer-focus:left-5 peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:bg-white peer-focus:text-lg
+                className="absolute left-5 top-3 z-20  origin-[0] -translate-y-6 scale-75 transform bg-white text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-5 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:bg-white peer-focus:text-lg peer-focus:font-medium peer-focus:text-black peer-focus:dark:text-black
                 "
               >
                 Name
               </label>
-              <span className=" absolute z-30 -top-2 left-3 bg-white hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+              <span className=" absolute -top-2 left-3 z-30 hidden bg-white text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
                 Please enter at least 3 characters
               </span>
             </div>
-            <div className="  relative m-2 h-16">
+            <div className=" relative  m-2 h-14 scale-75 sm:scale-90 md:scale-100">
               <input
                 type="email"
                 name="email"
@@ -79,15 +83,15 @@ const Contact = () => {
                 id="email"
                 required
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                className=" block py-3.5 px-2 w-full text-sm text-gray-900 bg-transparent border-2  border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-black peer rounded-xl absolute z-10 peer invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500"
+                className=" peer peer absolute z-10 block w-[90%] appearance-none rounded-xl border-2  border-gray-300 bg-transparent  px-2 py-3.5 text-sm text-gray-900 focus:border-black focus:outline-none focus:ring-0 md:w-full invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500"
               />
               <label
                 htmlFor="email"
-                className=" peer-focus:font-medium absolute text-lg text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 bg-white left-5 z-20 origin-[0] peer-focus:left-5 peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:bg-white peer-focus:text-lg"
+                className=" absolute left-5 top-3 z-20  origin-[0] -translate-y-6 scale-75 transform bg-white text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-5 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:bg-white peer-focus:text-lg peer-focus:font-medium peer-focus:text-black peer-focus:dark:text-black"
               >
                 Email
               </label>
-              <span className=" absolute z-30 -top-2 left-3 bg-white hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+              <span className=" absolute -top-2 left-3 z-30 hidden bg-white text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
                 Please enter a valid email address
               </span>
               <ValidationError
@@ -96,7 +100,7 @@ const Contact = () => {
                 errors={state.errors}
               />
             </div>
-            <div className="   relative m-2 h-60">
+            <div className=" relative m-2 h-40 scale-75 sm:scale-90 md:scale-100">
               <textarea
                 cols={30}
                 rows={10}
@@ -104,11 +108,11 @@ const Contact = () => {
                 placeholder=""
                 id="message"
                 required
-                className=" block py-3.5 px-2 w-full text-sm text-gray-900 bg-transparent border-2  border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-black peer rounded-xl absolute z-10 resize-none"
+                className=" peer absolute z-10 block w-[90%] resize-none appearance-none rounded-xl border-2  border-gray-300 bg-transparent  px-2 py-3.5 text-sm text-gray-900 focus:border-black focus:outline-none focus:ring-0 md:w-full"
               />
               <label
                 htmlFor="message"
-                className="  peer-focus:font-medium absolute text-lg text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 bg-white left-5 z-20 origin-[0] peer-focus:left-5 peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:bg-white peer-focus:text-lg"
+                className="  absolute left-5 top-3 z-20  origin-[0] -translate-y-6 scale-75 transform bg-white text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-5 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:bg-white peer-focus:text-lg peer-focus:font-medium peer-focus:text-black peer-focus:dark:text-black"
               >
                 Message
               </label>
@@ -121,7 +125,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={state.submitting}
-              className=" px-6 py-4 bg-black text-slate-200 text-md rounded-xl max-w-[10rem] flex items-center justify-center font-medium hover:opacity-90 ease-in-out transition duration-75 gap-3    group-invalid:pointer-events-none group-invalid:opacity-30"
+              className=" text-md ml-14 mt-12 flex max-w-[10rem] scale-90 items-center justify-center gap-3 rounded-xl bg-black px-6 py-4 font-medium text-slate-200 transition duration-75 ease-in-out hover:opacity-90 group-invalid:pointer-events-none group-invalid:opacity-30 sm:ml-8  sm:mt-16 sm:scale-100 md:ml-2 md:mt-24"
             >
               Send <BsFillSendFill />
             </button>
