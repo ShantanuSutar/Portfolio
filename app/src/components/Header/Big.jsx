@@ -3,7 +3,7 @@ import Theme from "./Theme";
 const Big = ({ handleClick, active, setTheme, theme }) => {
   return (
     <nav
-      className={` fixed z-50 hidden w-full items-center  justify-between  gap-8  rounded-md  p-3 text-lg font-medium text-slate-950 opacity-100  shadow-lg transition-all duration-500 dark:bg-slate-900 dark:text-white md:flex md:max-w-[81%] ${
+      className={` fixed z-50 hidden w-full items-center  justify-between  gap-8  rounded-md  p-3 text-lg font-medium text-slate-950 opacity-100  shadow-lg transition-all duration-500 dark:bg-slate-900 dark:text-white md:flex md:max-w-[82%] ${
         theme === "color" ? "" : " bg-white"
       } `}
     >

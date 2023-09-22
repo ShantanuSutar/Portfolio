@@ -11,9 +11,7 @@ const Info = () => {
           Frontend Developer<span>💻</span>
         </h3>
         <p className=" max-w-[95%] text-slate-700 dark:text-slate-300 sm:max-w-[80%]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-          dolores,soluta, labore voluptatum consequuntur quam vitae dolor
-          voluptatem
+          Enthusiastic about open-source and development
         </p>
         <a
           href="#contact"

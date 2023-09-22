@@ -1,5 +1,6 @@
 import AboutInfo from "./AboutInfo";
 import { CgFileDocument } from "react-icons/cg";
+import resume from "../../assets/Resume.pdf";
 const About = () => {
   return (
     <div className=" min-h-[90%] w-full  pt-5 md:pt-20 " id="about">
@@ -18,13 +19,17 @@ const About = () => {
         <div className=" flex flex-col items-center gap-10">
           <AboutInfo />
           <p className=" da text-center text-slate-600 dark:text-slate-300">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse odit
-            nobis voluptate repellat molestias optio, ipsum architecto facilis
-            perferendis non laboriosam Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Error excepturi voluptas quas debitis repellendus.
+            I am a passionate Frontend Developer specializing in React. With a
+            focus on creating intuitive and engaging user experiences, I have 9
+            months of experience in transforming design concepts into
+            functional, responsive, and scalable applications.
+            <hr className=" my-6" />
+            As a lifelong learner, I am constantly exploring the latest trends
+            and technologies in the FrontEnd landscape to enhance my skills and
+            deliver top-notch results.
           </p>
           <a
-            href=""
+            href={resume}
             className=" text-md flex max-w-[10rem] items-center justify-center gap-2 rounded-xl bg-slate-950 px-6 py-4 font-medium text-slate-200 transition duration-75 ease-in-out hover:opacity-90 dark:bg-slate-200 dark:text-slate-900"
           >
             Resume
