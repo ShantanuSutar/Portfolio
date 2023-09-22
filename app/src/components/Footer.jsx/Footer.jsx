@@ -3,7 +3,7 @@ const Footer = () => {
   const socials = Socials;
   //   console.log(socials);
   return (
-    <footer className=" flex min-h-[60%] w-full  flex-col gap-10  pt-10 text-center sm:pt-24 ">
+    <footer className=" flex min-h-[60%] w-full  flex-col gap-10  py-10 text-center sm:py-24 ">
       <div className=" flex scale-75 flex-col items-center gap-4 sm:scale-90 md:scale-100">
         <h1 className="  text-2xl font-bold uppercase text-slate-900 [word-spacing:14px] dark:text-slate-100 sm:text-3xl md:text-4xl">
           the best is yet to come

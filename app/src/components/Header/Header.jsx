@@ -61,7 +61,12 @@ const Header = ({ theme, setTheme }) => {
   return (
     <header className="">
       {/* // <header className=" text-lg font-medium p-3 shadow-md"> */}
-      <Small handleClick={handleClick} active={active} />
+      <Small
+        handleClick={handleClick}
+        active={active}
+        setTheme={setTheme}
+        theme={theme}
+      />
       <Big
         handleClick={handleClick}
         active={active}

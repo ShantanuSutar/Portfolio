@@ -193,7 +193,7 @@ html {
 /* Background Change */
 
 .color {
-  animation: changeBG 30s linear infinite alternate;
+  animation: changeBG 40s linear infinite alternate;
   animation-direction: alternate;
 }
 

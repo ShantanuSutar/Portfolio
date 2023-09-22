@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { GiPalette } from "react-icons/gi";
 
 const Theme = ({ setTheme, theme }) => {
   const [show, setShow] = useState(false);
@@ -15,17 +16,20 @@ const Theme = ({ setTheme, theme }) => {
   });
 
   return (
-    <li ref={showRef} className="">
+    <li ref={showRef} className=" flex flex-col items-center">
       <button
-        className="inline-flex items-center border-b-2 border-transparent text-center text-lg font-medium  hover:border-black dark:hover:border-white lg:text-xl"
+        className="inline-flex  items-center border-b-2 border-transparent text-center text-lg font-medium  hover:border-black dark:hover:border-white lg:text-xl"
         type="button"
         onClick={() => {
           setShow(!show);
         }}
       >
-        Theme
+        <span className=" flex flex-col items-center justify-center">
+          <GiPalette className=" md:hidden" />
+          Theme
+        </span>
         <svg
-          className="ml-2.5 h-2.5 w-2.5"
+          className="ml-2.5 hidden h-2.5 w-2.5 md:inline"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

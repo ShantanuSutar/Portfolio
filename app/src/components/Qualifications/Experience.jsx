@@ -12,7 +12,7 @@ const Experience = ({ toggle }) => {
     },
     {
       id: 2,
-      title: "Built 50+ projects",
+      title: "50+ projects",
       desc: "Major+Minor",
       time: "2022 - Present",
       direction: "right",

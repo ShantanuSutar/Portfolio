@@ -10,7 +10,7 @@ const Contact = () => {
   // console.log(socials);
   return (
     <section
-      className=" flex min-h-screen w-full flex-col gap-10  pt-14 text-center"
+      className=" flex min-h-[60vh] w-full flex-col gap-10  pt-14 text-center"
       id="contact"
     >
       <div className=" flex flex-col items-center gap-1">

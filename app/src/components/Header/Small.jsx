@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   AiOutlineAppstore,
   AiOutlineClose,
@@ -8,16 +8,31 @@ import {
 import { BiBriefcase, BiSolidContact } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
 import { HiOutlineDocumentText } from "react-icons/hi2";
+import Theme from "./Theme";
 
-const Small = ({ handleClick, active }) => {
+const Small = ({ handleClick, active, setTheme, theme }) => {
   const [toggle, setToggle] = useState(false);
+  let showRef = useRef();
+  useEffect(() => {
+    let handler = (e) => {
+      if (!showRef.current.contains(e.target)) {
+        setToggle(false);
+      }
+    };
 
+    document.addEventListener("mousedown", handler);
+  });
   return (
-    <nav className=" fixed bottom-0 right-0 z-50 mx-auto flex w-full  max-w-[100%] items-center justify-between gap-8 bg-slate-200 p-3 px-6 text-lg font-medium  text-slate-950 opacity-100 dark:bg-slate-800 dark:text-slate-100 md:hidden ">
+    <nav
+      ref={showRef}
+      className={`fixed bottom-0 right-0 z-50 mx-auto flex w-full  max-w-[100%] items-center justify-between gap-8 bg-slate-200 p-3 px-6 text-lg font-medium  text-slate-950 opacity-100 dark:bg-slate-800 dark:text-slate-100 md:hidden ${
+        theme === "color" ? " bg-slate-300" : ""
+      }`}
+    >
       <div
         className={` ${
           !toggle ? "flex" : "hidden"
-        } mx-0 flex h-max min-w-full items-center justify-between text-2xl font-semibold  `}
+        } mx-0 flex h-max min-w-full items-center justify-between text-2xl font-semibold`}
       >
         <span>Shantanu</span>
         <span>
@@ -34,7 +49,7 @@ const Small = ({ handleClick, active }) => {
           } w-full flex-col gap-4 pb-5 `}
         >
           <div className=" grid min-h-[4rem] grid-cols-3 items-center gap-12 ">
-            <li>
+            <li onClick={() => setToggle(false)}>
               <a
                 href="#home"
                 onClick={(e) => handleClick(e)}
@@ -51,7 +66,7 @@ const Small = ({ handleClick, active }) => {
                 Home
               </a>
             </li>
-            <li>
+            <li onClick={() => setToggle(false)}>
               <a
                 href="#about"
                 onClick={(e) => handleClick(e)}
@@ -68,7 +83,7 @@ const Small = ({ handleClick, active }) => {
                 About
               </a>
             </li>
-            <li>
+            <li onClick={() => setToggle(false)}>
               <a
                 href="#skills"
                 onClick={(e) => handleClick(e)}
@@ -88,24 +103,7 @@ const Small = ({ handleClick, active }) => {
           </div>
 
           <div className=" grid min-h-[4rem] grid-cols-3 items-center  gap-12 ">
-            <li>
-              <a
-                href="#work"
-                onClick={(e) => handleClick(e)}
-                className={`${
-                  active[3].state
-                    ? "active dark:border-white"
-                    : "border-black hover:border-b-2  dark:border-white"
-                } flex flex-col items-center`}
-                data-name="work"
-              >
-                <span className=" text-xl">
-                  <BiBriefcase />
-                </span>
-                Work
-              </a>
-            </li>
-            <li>
+            <li onClick={() => setToggle(false)}>
               <a
                 href="#projects"
                 onClick={(e) => handleClick(e)}
@@ -122,7 +120,7 @@ const Small = ({ handleClick, active }) => {
                 Projects
               </a>
             </li>
-            <li>
+            <li onClick={() => setToggle(false)}>
               <a
                 href="#contact"
                 onClick={(e) => handleClick(e)}
@@ -139,6 +137,7 @@ const Small = ({ handleClick, active }) => {
                 Contact
               </a>
             </li>
+            <Theme setTheme={setTheme} theme={theme} />
           </div>
           <div>
             <AiOutlineClose
