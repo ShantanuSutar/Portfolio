@@ -19,7 +19,7 @@ function App() {
     <div
       className={`${
         theme === "color" ? "color" : ""
-      } min-h-100% min-w-full bg-white transition-all duration-500 dark:bg-slate-950`}
+      } min-h-100% min-w-full bg-white transition-all duration-1000 ease-in-out dark:bg-slate-950`}
     >
       <div className=" container mx-auto sm:max-w-[80%]">
         <Header theme={theme} setTheme={setTheme} />

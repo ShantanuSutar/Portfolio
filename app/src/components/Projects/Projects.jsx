@@ -56,9 +56,9 @@ const Projects = () => {
           return (
             <span
               key={i}
-              className={` cursor-pointer rounded-lg px-4 py-2 text-slate-800 duration-200 hover:-translate-y-1 hover:bg-slate-800 hover:text-white dark:text-white ${
-                filter.name === fil.name
-                  ? " bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-800"
+              className={` cursor-pointer rounded-lg px-4 py-2 text-slate-800 duration-200 hover:-translate-y-1 hover:bg-slate-800 hover:text-white dark:text-white dark:hover:bg-slate-300 dark:hover:text-slate-900 ${
+                filter.name.toLowerCase() === fil.name.toLowerCase()
+                  ? " bg-slate-700 text-white "
                   : ""
               }`}
               onClick={() => setFilter({ name: fil.name })}

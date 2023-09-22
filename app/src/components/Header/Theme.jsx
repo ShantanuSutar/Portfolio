@@ -42,7 +42,7 @@ const Theme = ({ setTheme, theme }) => {
       </button>
       {/* <!-- Dropdown menu --> */}
       <div
-        className={` absolute right-0 top-12 z-10 divide-y divide-gray-100 rounded-lg  bg-inherit  bg-white pt-2 shadow  dark:bg-gray-700 ${
+        className={` absolute right-0 top-12 z-10 divide-y divide-gray-100 overflow-hidden rounded-lg  bg-inherit  bg-white pt-2 shadow  dark:bg-gray-700 ${
           show ? "visible" : "hidden"
         } `}
       >

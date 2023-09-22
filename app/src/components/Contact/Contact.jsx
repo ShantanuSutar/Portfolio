@@ -72,8 +72,7 @@ const Contact = () => {
               />
               <label
                 htmlFor="name"
-                className="absolute left-5 top-3 z-20  origin-[0] -translate-y-6 scale-75 transform bg-white text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-5 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:bg-white peer-focus:text-lg peer-focus:font-medium peer-focus:text-black dark:bg-slate-950 dark:text-slate-300 dark:peer-focus:bg-slate-950 dark:peer-focus:text-white peer-focus:dark:text-black
-                "
+                className="absolute left-2 top-2 z-20  origin-[0] -translate-y-6 scale-75 transform  rounded-lg bg-transparent bg-white p-[4px] text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-5 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:bg-white peer-focus:text-lg peer-focus:font-medium peer-focus:text-slate-500 dark:bg-slate-950 dark:text-slate-300 dark:peer-focus:bg-slate-950 dark:peer-focus:text-white  "
               >
                 Name
               </label>
@@ -81,7 +80,7 @@ const Contact = () => {
                 Please enter at least 3 characters
               </span>
             </div>
-            <div className=" relative  m-2 h-14 scale-75 sm:scale-90 md:scale-100">
+            <div className=" relative m-2 h-14 scale-75 sm:scale-90 md:mx-2 md:my-4 md:scale-100">
               <input
                 type="email"
                 name="email"
@@ -93,7 +92,7 @@ const Contact = () => {
               />
               <label
                 htmlFor="email"
-                className="absolute left-5 top-3 z-20  origin-[0] -translate-y-6 scale-75 transform bg-white text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-5 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:bg-white peer-focus:text-lg peer-focus:font-medium peer-focus:text-black dark:bg-slate-950 dark:text-slate-300 dark:peer-focus:bg-slate-950 dark:peer-focus:text-white peer-focus:dark:text-black"
+                className="absolute left-2 top-2 z-20  origin-[0] -translate-y-6 scale-75 transform  rounded-lg bg-transparent bg-white p-[4px] text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-5 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:bg-white peer-focus:text-lg peer-focus:font-medium peer-focus:text-slate-500 dark:bg-slate-950 dark:text-slate-300 dark:peer-focus:bg-slate-950 dark:peer-focus:text-white  "
               >
                 Email
               </label>
@@ -118,7 +117,7 @@ const Contact = () => {
               />
               <label
                 htmlFor="message"
-                className=" absolute left-5 top-3 z-20  origin-[0] -translate-y-6 scale-75 transform bg-white text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-5 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:bg-white peer-focus:text-lg peer-focus:font-medium peer-focus:text-black dark:bg-slate-950 dark:text-slate-300 dark:peer-focus:bg-slate-950 dark:peer-focus:text-white peer-focus:dark:text-black"
+                className="absolute left-2 top-2 z-20  origin-[0] -translate-y-6 scale-75 transform  rounded-lg bg-transparent bg-white p-[4px] text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-5 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:bg-white peer-focus:text-lg peer-focus:font-medium peer-focus:text-slate-500 dark:bg-slate-950 dark:text-slate-300 dark:peer-focus:bg-slate-950 dark:peer-focus:text-white  "
               >
                 Message
               </label>
