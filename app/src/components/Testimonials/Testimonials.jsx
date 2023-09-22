@@ -6,24 +6,24 @@ import { BsArrowLeft } from "react-icons/bs";
 const Testimonials = () => {
   const data = [
     {
-      img: "../src/assets/Testimonials/Rupam.jpeg",
+      img: "https://i.ibb.co/qN4cq7Q/Rupam.jpg",
       name: "Rupam Sutar",
       desc: "        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, esse quo molestiae blanditiis incidunt labore amet voluptatibus, repellat quam eum tempora illo quasi obcaecati perferendis quas rem nam exercitationem in?",
     },
     {
-      img: "../src/assets/Testimonials/Abhi.jpeg",
+      img: "https://i.ibb.co/wykmZyx/Abhi.jpg",
 
       name: "Abhishek Shinde",
       desc: "        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, esse quo molestiae blanditiis incidunt labore amet voluptatibus, repellat quam eum tempora illo quasi obcaecati perferendis quas rem nam exercitationem in?",
     },
     {
-      img: "../src/assets/Testimonials/Sarthak.jpeg",
+      img: "https://i.ibb.co/p2PH0g0/Sarthak.jpg",
 
       name: "Sarthak Sukate",
       desc: "        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, esse quo molestiae blanditiis incidunt labore amet voluptatibus, repellat quam eum tempora illo quasi obcaecati perferendis quas rem nam exercitationem in?",
     },
     {
-      img: "../src/assets/Testimonials/Ritesh.jpeg",
+      img: "https://i.ibb.co/HCsXFGw/Ritesh.jpg",
 
       name: "Ritesh Patange",
       desc: "        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, esse quo molestiae blanditiis incidunt labore amet voluptatibus, repellat quam eum tempora illo quasi obcaecati perferendis quas rem nam exercitationem in?",

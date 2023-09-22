@@ -6,8 +6,8 @@ const data = [
     image: "https://i.ibb.co/cT2qjh4/portfolio.png",
     description:
       "My Portfolio: A React and Tailwind CSS-driven personal showcase with light, dark, and color modes, ensuring a stylish, responsive presentation of creative work and accomplishments.",
-    demoLink: "https://example.com/demo1",
-    repoLink: "https://github.com/yourusername/project1",
+    demoLink: "https://shantanu-frontend-dev-portfolio.netlify.app/",
+    repoLink: "https://github.com/ShantanuSutar/Portfolio",
   },
   {
     id: 2,

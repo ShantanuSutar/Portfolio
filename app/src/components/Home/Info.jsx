@@ -22,9 +22,9 @@ const Info = () => {
       </div>
       <div className=" mr-8">
         <img
-          src="../src/assets/FormalPhoto.jpg"
+          src="https://i.ibb.co/TmhZF9C/Formal-Photo.jpg"
           alt=""
-          className="home-img h-[15rem] w-[15rem] md:h-[14rem] md:w-[14rem] lg:h-[18rem] lg:w-[18rem] xl:h-[22rem] xl:w-[22rem] "
+          className="home-img h-[15rem] w-[15rem]  border-4 md:h-[14rem] md:w-[14rem] lg:h-[18rem] lg:w-[18rem] xl:h-[22rem]  xl:w-[22rem]"
         />
       </div>
     </section>
