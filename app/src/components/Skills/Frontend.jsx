@@ -4,7 +4,7 @@ const Frontend = () => {
     {
       id: 1,
       title: "ui/ux",
-      tech: "react , tailwind, material ui",
+      tech: "react , typescript, tailwind, material ui",
     },
     {
       id: 2,

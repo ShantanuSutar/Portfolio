@@ -1,5 +1,24 @@
 const data = [
   {
+    id: 14,
+    title: "unsaid - blog app",
+    category: "React",
+    image: "https://i.postimg.cc/2S6BCzjQ/Screenshot-2023-12-21-183844.png",
+    description: ` "Unsaid - Stories and More", a full-stack blog app - a React front end styled with Sass, a Node.js and Express backend for robust server operations, JWT authentication for security, and a MySQL database`,
+    demoLink: "https://unsaid-stories-and-more.netlify.app/",
+    repoLink: "https://github.com/ShantanuSutar/Blog-App",
+  },
+  {
+    id: 2,
+    title: "comfy sloth",
+    category: "React",
+    image: "https://i.ibb.co/sVcVpYF/comfy-sloth.png",
+    description:
+      "Comfy Sloth: A React-driven furniture store with Auth0 authentication, Stripe payments, and advanced state management, offering extensive filters for tailored shopping.",
+    demoLink: "https://shantanu-comfy-sloth-store.netlify.app/",
+    repoLink: "https://github.com/ShantanuSutar/Comfy-Sloth",
+  },
+  {
     id: 1,
     title: "portfolio",
     category: "React",
@@ -10,7 +29,7 @@ const data = [
     repoLink: "https://github.com/ShantanuSutar/Portfolio",
   },
   {
-    id: 2,
+    id: 4,
     title: "fast react pizza",
     category: "React",
     image: "https://i.ibb.co/qxfq77W/Fast-react-pizza.png",
@@ -27,18 +46,9 @@ const data = [
     description:
       "Chit-Chat: Where React meets Tailwind CSS for a stylish and secure web chat experience with real-time messaging, Firebase integration, and inbuilt authentication.",
     demoLink: "https://chit-chat-stay-connected.netlify.app/",
-    repoLink: "https://github.com/ShantanuSutar/ChatApp",
+    repoLink: "https://github.com/ShantanuSutar/Chat-App-using-React",
   },
-  {
-    id: 4,
-    title: "comfy sloth",
-    category: "React",
-    image: "https://i.ibb.co/sVcVpYF/comfy-sloth.png",
-    description:
-      "Comfy Sloth: A React-driven furniture store with Auth0 authentication, Stripe payments, and advanced state management, offering extensive filters for tailored shopping.",
-    demoLink: "https://shantanu-comfy-sloth-store.netlify.app/",
-    repoLink: "https://github.com/ShantanuSutar/Comfy-Sloth",
-  },
+
   {
     id: 5,
     title: "where in the world",
@@ -46,7 +56,7 @@ const data = [
     image: "https://i.ibb.co/0qy7k7P/rest-countries.png",
     description:
       "The REST Countries API with React is a web application that allows users to search for and view information about countries around the world.",
-    demoLink: "https://wibe-fashion-studio.netlify.app/",
+    demoLink: "https://shantanu-where-in-the-world.netlify.app/",
     repoLink: "https://github.com/ShantanuSutar/REST-Countries-API",
   },
   {

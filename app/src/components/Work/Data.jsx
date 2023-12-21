@@ -8,7 +8,7 @@ const Data = [
     icon: <TfiLayout />,
     title: "Open Source Contributions",
     modalTitle: "Open Source",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente maiores atque aspernatur modi quos excepturi",
+    desc: "Open source is a decentralized software development model that involves making source code freely available for modification and redistribution",
     points: [
       {
         point: "Actively contributing to opensource",
@@ -31,23 +31,23 @@ const Data = [
     id: 2,
     icon: <SiAntdesign />,
     title: "Previous Project",
-    modalTitle: "Portfolio",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente maiores atque aspernatur modi quos excepturi",
+    modalTitle: "Blog App",
+    desc: ` "Unsaid - Stories and More", a full-stack blog application that seamlessly integrates a React front end styled with Sass, a Node.js and Express backend for robust server operations, JWT authentication for security, and a MySQL database for efficient data management`,
     points: [
       {
-        point: "portfolio",
+        point: "JWT Authentication",
       },
       {
-        point: "react , tailwind",
+        point: "Sass Styling",
       },
       {
-        point: "animations",
+        point: "MySQL Database",
       },
       {
-        point: "ui/ux",
+        point: "Light/Dark Mode",
       },
       {
-        point: "optimization",
+        point: "Write, Edit, Delete, Comment a Blog",
       },
     ],
   },
@@ -56,7 +56,7 @@ const Data = [
     icon: <BsPencilSquare />,
     title: "Current Project",
     modalTitle: "The Wild Oasis",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente maiores atque aspernatur modi quos excepturi",
+    desc: "Dashboard Application",
     points: [
       {
         point: "the wild oasis - dashboard",

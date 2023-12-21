@@ -8,6 +8,30 @@ const Contact = () => {
     return <p>Thanks for joining!</p>;
   }
   // console.log(socials);
+
+  const handleSocials = (social) => {
+    switch (social) {
+      case "Gmail":
+        {
+          let gmailurl = `https://mail.google.com/mail/u/0/#inbox?compose=new`;
+          window.open(gmailurl, "_blank");
+        }
+        break;
+      case "LinkedIn":
+        {
+          let linkedinurl = `https://www.linkedin.com/in/shantanu-sutar-425591238/`;
+          window.open(linkedinurl, "_blank");
+        }
+        break;
+      case "Twitter":
+        {
+          let twitterurl = `https://twitter.com/ShantanuSutar17`;
+          window.open(twitterurl, "_blank");
+        }
+        break;
+    }
+  };
+
   return (
     <section
       className=" flex min-h-[60vh] w-full flex-col gap-10  pt-14 text-center"
@@ -42,7 +66,10 @@ const Contact = () => {
                   <span className=" text-xs text-slate-500 dark:text-slate-400">
                     {social.username}
                   </span>
-                  <span className=" clear-left mt-2 flex cursor-pointer items-center gap-2 p-2 text-slate-600 transition-all duration-150 hover:rounded-lg hover:bg-slate-200 dark:text-slate-500 dark:hover:bg-slate-700">
+                  <span
+                    className=" clear-left mt-2 flex cursor-pointer items-center gap-2 p-2 text-slate-600 transition-all duration-150 hover:rounded-lg hover:bg-slate-200 dark:text-slate-500 dark:hover:bg-slate-700"
+                    onClick={() => handleSocials(social.title)}
+                  >
                     Write me <BsArrowRight className="" />
                   </span>
                 </div>
