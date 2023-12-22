@@ -1,6 +1,6 @@
 import AboutInfo from "./AboutInfo";
 import { CgFileDocument } from "react-icons/cg";
-import resume from "../../assets/Resume.pdf";
+import resume from "../../assets/Resume_2.pdf";
 const About = () => {
   return (
     <div className=" min-h-[90%] w-full  pt-5 md:pt-20 " id="about">
