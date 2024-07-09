@@ -1,6 +1,6 @@
 import AboutInfo from "./AboutInfo";
 import { CgFileDocument } from "react-icons/cg";
-import resume from "../../assets/Resume_2.pdf";
+import resume from "../../assets/Shantanu_Resume_final.pdf";
 import CasualPhotoCropped from "../../../public/assets/Casual-Photo-Cropped.jpg";
 const About = () => {
   return (
