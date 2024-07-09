@@ -13,7 +13,7 @@ import Work from "./components/Work/Work";
 
 function App() {
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark",
   );
   return (
     <div

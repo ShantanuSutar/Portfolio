@@ -4,7 +4,7 @@ const Education = ({ toggle }) => {
   const data = [
     {
       id: 1,
-      title: "Btech in CS",
+      title: "Btech in IT",
       desc: "PCCOE Pune",
       time: "2021-Present",
       direction: "left",

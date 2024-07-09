@@ -91,7 +91,7 @@ const Projects = () => {
                   {prj?.stack?.map((stack, id) => {
                     return (
                       <span
-                        className=" flex items-center justify-center rounded-full bg-gray-700 p-1"
+                        className=" flex items-center justify-center rounded-full bg-gray-200 p-1  dark:bg-gray-700"
                         key={id}
                       >
                         {stack}
