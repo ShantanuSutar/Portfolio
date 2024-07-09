@@ -1,6 +1,7 @@
 import AboutInfo from "./AboutInfo";
 import { CgFileDocument } from "react-icons/cg";
 import resume from "../../assets/Resume_2.pdf";
+import CasualPhotoCropped from "../../../public/assets/Casual-Photo-Cropped.jpg";
 const About = () => {
   return (
     <div className=" min-h-[90%] w-full  pt-5 md:pt-20 " id="about">
@@ -12,7 +13,7 @@ const About = () => {
       </div>
       <div className=" mx-8 flex flex-col md:m-10  md:grid md:grid-cols-2 md:items-center md:gap-x-10">
         <img
-          src="https://i.ibb.co/R7DHQVM/Casual-Photo-Cropped.jpg"
+          src={CasualPhotoCropped}
           alt=""
           className=" -mt-6 scale-75  justify-self-center rounded-[1.5rem] shadow-2xl saturate-100 md:scale-100"
         />

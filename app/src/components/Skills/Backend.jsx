@@ -1,4 +1,3 @@
-import { HiBadgeCheck } from "react-icons/hi";
 import Tech from "./Tech";
 const BackEnd = () => {
   const data = [
@@ -15,14 +14,14 @@ const BackEnd = () => {
     {
       id: 3,
       title: "Testing",
-      tech: "Jest, Postman",
+      tech: "Postman",
     },
   ];
 
   return (
     <div
       className="  flex flex-col items-center justify-center gap-10 px-0 py-8 text-left
-      shadow-lg transition-all duration-300 hover:shadow-2xl hover:dark:shadow-slate-800 md:px-16"
+      shadow-lg transition-all duration-300 hover:shadow-2xl dark:shadow-slate-800 md:px-16"
     >
       <h3 className=" text-xl font-semibold text-slate-950 dark:text-slate-100  lg:text-3xl">
         BackEnd

@@ -4,19 +4,16 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 const Projects = () => {
-  const [filter, setFilter] = useState({ name: "react" });
+  const [filter, setFilter] = useState({ name: "all" });
   const filters = [
     {
       name: "all",
     },
     {
-      name: "react",
+      name: "full-stack",
     },
     {
-      name: "javascript",
-    },
-    {
-      name: "css",
+      name: "ui",
     },
   ];
 
@@ -47,7 +44,7 @@ const Projects = () => {
           Projects
         </h2>
         <span className="text-sm text-slate-500 lg:text-base">
-          What I've built
+          {"What I've built"}
         </span>
       </div>
 
@@ -68,12 +65,12 @@ const Projects = () => {
           );
         })}
       </div>
-      <div className=" flex flex-wrap items-center justify-around shadow-2xl  sm:gap-10 sm:p-4">
+      <div className=" flex flex-wrap items-center justify-around  shadow-2xl sm:gap-10 sm:p-4">
         {projects.map((prj) => {
           return (
             <div
               key={prj.id}
-              className="flex scale-90 flex-col  justify-start rounded-xl p-8 text-left shadow-xl dark:shadow-slate-900 sm:scale-100"
+              className="flex h-[490px] flex-col rounded-xl  p-8 text-left shadow-xl dark:shadow-slate-900 sm:scale-100"
             >
               <div className="">
                 <img
@@ -83,14 +80,26 @@ const Projects = () => {
                   "
                 />
               </div>
-              <div className=" mx-2 my-5 flex flex-col gap-2">
+              <div className=" mx-2 my-5 flex h-full flex-col justify-around gap-2">
                 <p className=" relative min-h-[12rem] w-[16rem] cursor-pointer rounded-2xl bg-cover bg-center object-cover  text-slate-900 dark:text-slate-100 ">
                   {prj.description}
                 </p>
-                <h3 className=" text-xl font-medium text-slate-900 dark:text-slate-100">
+                <h3 className=" text-xl font-medium capitalize text-slate-900 dark:text-slate-100">
                   {prj.title}
                 </h3>
-                <div className=" flex items-center gap-4 text-2xl text-slate-800 dark:text-slate-200 ">
+                <h3 className="my-4 grid grid-cols-2 gap-2 text-xs font-medium capitalize text-slate-900 dark:text-slate-100 sm:grid-cols-3">
+                  {prj?.stack?.map((stack, id) => {
+                    return (
+                      <span
+                        className=" flex items-center justify-center rounded-full bg-gray-700 p-1"
+                        key={id}
+                      >
+                        {stack}
+                      </span>
+                    );
+                  })}
+                </h3>
+                <div className=" flex items-center justify-center gap-4 text-2xl text-slate-800 dark:text-slate-200">
                   <span className=" duration-200 hover:-translate-y-1">
                     <a href={prj.demoLink}>
                       <FiExternalLink />

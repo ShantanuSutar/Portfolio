@@ -4,7 +4,7 @@ const Frontend = () => {
     {
       id: 1,
       title: "ui/ux",
-      tech: "react , typescript, tailwind, material ui",
+      tech: "Nextjs, react , typescript, tailwind, shadcn",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const Frontend = () => {
   return (
     <div
       className=" flex flex-col items-center justify-center gap-10 px-0 py-8 text-left
-     shadow-lg transition-all duration-300 hover:shadow-2xl hover:dark:shadow-slate-800 md:px-16"
+     shadow-lg transition-all duration-300 hover:shadow-2xl dark:shadow-slate-800 md:px-16"
     >
       <h3 className=" text-xl font-semibold text-slate-950 dark:text-slate-100  lg:text-3xl">
         FrontEnd

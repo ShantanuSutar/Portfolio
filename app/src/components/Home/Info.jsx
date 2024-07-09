@@ -1,4 +1,5 @@
 import { BsFillSendFill } from "react-icons/bs";
+import HomePhoto from "../../../public/assets/Croped.jpg";
 const Info = () => {
   return (
     <section className=" flex flex-col-reverse items-center gap-5 md:flex-row">
@@ -22,7 +23,7 @@ const Info = () => {
       </div>
       <div className=" mr-8">
         <img
-          src="https://i.ibb.co/TmhZF9C/Formal-Photo.jpg"
+          src={HomePhoto}
           alt=""
           className="home-img h-[15rem] w-[15rem]  border-4 md:h-[14rem] md:w-[14rem] lg:h-[18rem] lg:w-[18rem] xl:h-[22rem]  xl:w-[22rem]"
         />

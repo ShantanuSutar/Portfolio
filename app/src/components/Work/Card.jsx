@@ -44,7 +44,7 @@ const Card = ({ item }) => {
   return (
     <div
       className=" flex min-h-[16rem] w-[300px] flex-col flex-wrap justify-evenly
-      gap-2  px-8 py-8 text-slate-900 shadow-xl dark:text-slate-100 lg:min-w-[320px] lg:px-10 lg:py-4"
+      gap-2  px-8 py-8 text-slate-900  shadow-xl dark:text-slate-100 dark:shadow-slate-900 lg:min-w-[320px] lg:px-10 lg:py-4"
     >
       <div className=" text-xl lg:text-2xl">{icon}</div>
       <h3 className=" text-lg font-medium dark:text-slate-200 lg:text-xl">

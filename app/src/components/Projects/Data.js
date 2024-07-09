@@ -1,8 +1,56 @@
 const data = [
   {
+    id: 18,
+    title: "Ranga: AI Mock Interviewer",
+    category: "full-stack",
+    stack: [
+      "nextjs",
+      "tailwind",
+      "shadcn",
+      "neonDB",
+      "GeminiAPI",
+      "Clerk",
+      "Stripe",
+    ],
+    image: "https://i.ibb.co/1XL9vxY/Screenshot-2024-07-08-204056.png",
+    description: `Ranga is an AI-powered mock interviewer designed to help job seekers prepare for their interviews. Ranga provides realistic and tailored interview experiences, mimicking the actual job interviews.`,
+    demoLink: "https://ai-mock-interviewer-ranga.vercel.app",
+    repoLink: "https://github.com/ShantanuSutar/AI-Mock-Interviewer-Ranga",
+  },
+  {
+    id: 17,
+    title: "Instagram Clone",
+    category: "full-stack",
+    stack: [
+      "Nextjs",
+      "typescript",
+      "mongodb",
+      "prisma",
+      "tailwind",
+      "nextauth",
+    ],
+    image: "https://i.ibb.co/kM5yJJs/Screenshot-2024-07-08-220312.png",
+    description: `Instagram Clone aims to provide an engaging and user-friendly experience, mirroring the popular features that make Instagram a widely-used social media network.`,
+    demoLink: "https://insta-clone-mu.vercel.app",
+    repoLink: "https://github.com/ShantanuSutar/insta-clone",
+  },
+
+  {
+    id: 15,
+    title: "Cryptocurrency-Tracker",
+    category: "ui",
+    stack: ["react", "typescript", "tailwind"],
+    image: "https://i.ibb.co/P4n2KPm/crypto-min.png",
+    description: `Crypto Assassin, destination for navigating the world of cryptocurrencies. Our platform is designed to be your guide through the latest trends, insights, and analyses.`,
+    demoLink: "https://crypto-assasin.vercel.app/",
+    repoLink:
+      "https://github.com/ShantanuSutar/Cryptocurrency-Tracker-using-Typescript",
+  },
+  {
     id: 14,
     title: "unsaid - blog app",
-    category: "React",
+    category: "full-stack",
+    stack: ["react", "mysql", "node", "express", "jwt", "sass", "cloudinary"],
     image: "https://i.postimg.cc/2S6BCzjQ/Screenshot-2023-12-21-183844.png",
     description: ` "Unsaid - Stories and More", a full-stack blog app - a React front end styled with Sass, a Node.js and Express backend for robust server operations, JWT authentication for security, and a MySQL database`,
     demoLink: "https://unsaid-stories-and-more.netlify.app/",
@@ -11,27 +59,40 @@ const data = [
   {
     id: 2,
     title: "comfy sloth",
-    category: "React",
+    category: "full-stack",
+    stack: ["react", "styled com", "context", "stripe", "auth0"],
     image: "https://i.ibb.co/sVcVpYF/comfy-sloth.png",
     description:
       "Comfy Sloth: A React-driven furniture store with Auth0 authentication, Stripe payments, and advanced state management, offering extensive filters for tailored shopping.",
-    demoLink: "https://shantanu-comfy-sloth-store.netlify.app/",
+    demoLink: "https://shantanu-comfy-sloth-store.vercel.app",
     repoLink: "https://github.com/ShantanuSutar/Comfy-Sloth",
+  },
+  {
+    id: 16,
+    title: "uifry-landing-page",
+    category: "ui",
+    stack: ["react", "tailwind"],
+    image: "https://i.ibb.co/dbjyH18/Screenshot-2024-07-09-201845.png",
+    description: `Challenge was to make the ui look similar to the figma design. I added extra darkmode as well and made it responsive too.`,
+    demoLink: "https://uifry-landing-page-murex.vercel.app/",
+    repoLink: "https://github.com/ShantanuSutar/uifry-landing-page",
   },
   {
     id: 1,
     title: "portfolio",
-    category: "React",
+    category: "ui",
+    stack: ["react", "tailwind"],
     image: "https://i.ibb.co/cT2qjh4/portfolio.png",
     description:
-      "My Portfolio: A React and Tailwind CSS-driven personal showcase with light, dark, and color modes, ensuring a stylish, responsive presentation of creative work and accomplishments.",
+      "A React and Tailwind CSS-driven personal showcase with light, dark, and color modes, ensuring a stylish, responsive presentation of creative work and accomplishments.",
     demoLink: "https://shantanu-frontend-dev-portfolio.netlify.app/",
     repoLink: "https://github.com/ShantanuSutar/Portfolio",
   },
   {
     id: 4,
     title: "fast react pizza",
-    category: "React",
+    category: "ui",
+    stack: ["react", "tailwind"],
     image: "https://i.ibb.co/qxfq77W/Fast-react-pizza.png",
     description:
       "Fast React Pizza Company: Where style meets speed for a seamless pizza experience with reusability and real-time order tracking, all served with a slice of innovation.",
@@ -41,7 +102,8 @@ const data = [
   {
     id: 3,
     title: "chat app",
-    category: "React",
+    category: "full-stack",
+    stack: ["react", "tailwind", "firebase", "auth"],
     image: "https://i.ibb.co/bHvfcnn/chi-chat.png",
     description:
       "Chit-Chat: Where React meets Tailwind CSS for a stylish and secure web chat experience with real-time messaging, Firebase integration, and inbuilt authentication.",
@@ -52,7 +114,8 @@ const data = [
   {
     id: 5,
     title: "where in the world",
-    category: "React",
+    category: "ui",
+    stack: ["react", "css"],
     image: "https://i.ibb.co/0qy7k7P/rest-countries.png",
     description:
       "The REST Countries API with React is a web application that allows users to search for and view information about countries around the world.",
@@ -62,7 +125,8 @@ const data = [
   {
     id: 6,
     title: "wibe : fashion studio",
-    category: "React",
+    category: "ui",
+    stack: ["React", "styled com", "gsap", "framer m", "loco scroll"],
     image: "https://i.ibb.co/L0V2tM3/wibe.png",
     description:
       "Wibe: A React website adorned with GSAP, Styled Components, Framer Motion, and Locomotive Scroll, delivering an immersive shopping experience with stunning animations and elegant scroll interactions.",
@@ -73,7 +137,8 @@ const data = [
   {
     id: 7,
     title: "random quote",
-    category: "Javascript",
+    category: "ui",
+    stack: ["html", "css", "js"],
     image: "https://i.ibb.co/n77nmp1/random-quote.png",
     description:
       "Random Quote Generator: A dynamic web tool fetching quotes from an API, with colors changing on each new quote, adding variety to your daily dose of inspiration.",
@@ -83,7 +148,8 @@ const data = [
   {
     id: 8,
     title: "weather app",
-    category: "Javascript",
+    category: "ui",
+    stack: ["html", "css", "js"],
     image: "https://i.ibb.co/51V2MV6/weather-app.png",
     description:
       "Weather Now: An intuitive weather app providing real-time updates and auto-geolocation, effortlessly delivering weather information for your current location without manual input.",
@@ -93,7 +159,8 @@ const data = [
   {
     id: 9,
     title: "translator app",
-    category: "Javascript",
+    category: "ui",
+    stack: ["html", "css", "js"],
     image: "https://i.ibb.co/m4SM6fP/translator.png",
     description:
       "Translator App: A versatile tool that translates text between multiple languages, making communication seamless and accessible, no matter where you are in the world.",
@@ -103,7 +170,8 @@ const data = [
   {
     id: 10,
     title: "calculator",
-    category: "Javascript",
+    category: "ui",
+    stack: ["html", "css", "js"],
     image: "https://i.ibb.co/T1jBg0x/calculator.png",
     description:
       "Calculator App: A user-friendly digital calculator for quick and accurate mathematical calculations, simplifying everyday math tasks with ease and efficiency.",
@@ -113,7 +181,8 @@ const data = [
   {
     id: 11,
     title: "huddle landing page - home ",
-    category: "CSS",
+    category: "ui",
+    stack: ["html", "css"],
     image: "https://i.ibb.co/hRD4zn4/huddle-landing-page.png",
     description:
       "Huddle Landing Page - Home Section: A clean and minimalist landing page with a vanilla CSS-designed home section, offering an inviting and straightforward introduction to the Huddle platform.",
@@ -124,7 +193,8 @@ const data = [
   {
     id: 12,
     title: "social proof section",
-    category: "CSS",
+    category: "ui",
+    stack: ["html", "css"],
     image: "https://i.ibb.co/zGfKh97/social-proof.png",
     description:
       "Social Proof Section: A website segment featuring testimonials and user reviews to establish credibility and trust in your brand or product, fostering confidence among potential customers.",
@@ -134,7 +204,8 @@ const data = [
   {
     id: 13,
     title: "four card feature section",
-    category: "CSS",
+    category: "ui",
+    stack: ["html", "css"],
     image: "https://i.ibb.co/r2WJ3gR/four-card.png",
     description:
       "Four Card Feature Section: An engaging webpage section presenting four key features or offerings concisely and attractively, simplifying complex information and enhancing user understanding.",
